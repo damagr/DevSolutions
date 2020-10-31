@@ -5,47 +5,7 @@ namespace ReactNative
 {
     class Program
     {
-        static string AccessCreate(string path)
-        {
-            Console.Write("Indicame como llamaremos al proyecto: ");
-            string project = Console.ReadLine();
-
-            string start = "npx react-native init " + project;
-            //string run = "npx react-native run-android";
-            //string finalStart = path.Substring(0,2) + " " + "&& cd " + path + " " + "&& " + start + " " + "&& " + run;
-            string finalStart = path.Substring(0, 2) + " " + "&& cd " + path + " " + "&& " + start;
-
-            return finalStart;
-        }
-        static string AccessStart(string path)
-        {
-            Console.Write("Indicame que proyecto usaremos: ");
-            string project = Console.ReadLine();
-
-            string access = path + @"\" + project;
-            string run = "npx react-native run-android";
-            string finalAccess = path.Substring(0, 2) + " " + "&& cd " + access + @"\" + " " + "&& " + run;
-
-            return finalAccess;
-        }
-        static string AccessInstallLibraries(string path)
-        {
-            Console.Write("Indicame que proyecto usaremos: ");
-            string project = Console.ReadLine();
-
-            string access = path + @"\" + project;
-            string run = "npm i react-native-elements && npm i react-native-vector-icons";
-            string finalAccess = path.Substring(0, 2) + " " + "&& cd " + access + @"\ && " + run;
-
-            return finalAccess;
-        }
-        static string showDir(string path)
-        {
-            string dir = "dir " + path;
-
-            return dir;
-        }
-        static int Menu()
+        static int Menu(string path)
         {
             Console.Clear();
             Console.WriteLine("Selecciona una opción del menú: " +
@@ -55,8 +15,41 @@ namespace ReactNative
                "\n4. Salir");
             int menu = int.Parse(Console.ReadLine());
 
+            Console.Clear();
+            ExecuteCommand(ShowDirectory(path));
+
             return menu;
         }
+        static string ShowDirectory(string path)
+        {
+            return "dir " + path;
+        }
+        static string CreateProject(string path)
+        {
+            Console.Write("Indicame como llamaremos al proyecto: ");
+            string project = Console.ReadLine();
+
+            return path.Substring(0, 2) + " " + "&& cd " + path + " " + "&& " + "npx react-native init " + project;
+        }
+        static string StartProject(string path)
+        {
+            Console.Write("Indicame que proyecto usaremos: ");
+            string project = Console.ReadLine();
+
+            string run = "&& npx react-native run-android";
+
+            return path.Substring(0, 2) + " " + "&& cd " + path + @"\" + project + " " + run;
+        }
+        static string InstallLibraries(string path)
+        {
+            Console.Write("Indicame que proyecto usaremos: ");
+            string project = Console.ReadLine();
+
+            string libraries = "&& npm i react-native-elements && npm i react-native-vector-icons";
+
+            return path.Substring(0, 2) + " " + "&& cd " + path + @"\" + project + " " + libraries;
+        }
+       
         static void ExecuteCommand(string command)
         {
             Process cmd = new Process();
@@ -81,20 +74,19 @@ namespace ReactNative
             Console.Write("Introduce la ruta donde almacenas los proyectos: ");
             pathOrigin = Console.ReadLine();
 
-            switch (Menu())
+            switch (Menu(pathOrigin))
             {
                 case 1:
-                    ExecuteCommand(showDir(pathOrigin));
-                    ExecuteCommand(AccessCreate(pathOrigin));
-                    ;
+                    //ExecuteCommand(ShowDirectory(pathOrigin));
+                    ExecuteCommand(CreateProject(pathOrigin));
                     break;
                 case 2:
-                    ExecuteCommand(showDir(pathOrigin));
-                    ExecuteCommand(AccessStart(pathOrigin));
+                    //ExecuteCommand(ShowDirectory(pathOrigin));
+                    ExecuteCommand(StartProject(pathOrigin));
                     break;
                 case 3:
-                    ExecuteCommand(showDir(pathOrigin));
-                    ExecuteCommand(AccessInstallLibraries(pathOrigin));
+                    //ExecuteCommand(ShowDirectory(pathOrigin));
+                    ExecuteCommand(InstallLibraries(pathOrigin));
                     break;
                 case 4:
                     Console.WriteLine("Hasta pronto!");
