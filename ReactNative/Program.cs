@@ -5,14 +5,15 @@ namespace ReactNative
 {
     class Program
     {
-        static string AccessCreateStart(string path)
+        static string AccessCreate(string path)
         {
             Console.Write("Indicame como llamaremos al proyecto: ");
             string project = Console.ReadLine();
 
             string start = "npx react-native init " + project;
-            string run = "npx react-native run-android";
-            string finalStart = path.Substring(0,2) + " " + "&& cd " + path + " " + "&& " + start + " " + "&&" + " " + run;
+            //string run = "npx react-native run-android";
+            //string finalStart = path.Substring(0,2) + " " + "&& cd " + path + " " + "&& " + start + " " + "&& " + run;
+            string finalStart = path.Substring(0, 2) + " " + "&& cd " + path + " " + "&& " + start;
 
             return finalStart;
         }
@@ -23,7 +24,7 @@ namespace ReactNative
 
             string access = path + @"\" + project;
             string run = "npx react-native run-android";
-            string finalAccess = path.Substring(0, 2) + " " + "&& cd " + access + @"\" + " " + "&&" + " " + run;
+            string finalAccess = path.Substring(0, 2) + " " + "&& cd " + access + @"\" + " " + "&& " + run;
 
             return finalAccess;
         }
@@ -34,7 +35,7 @@ namespace ReactNative
 
             string access = path + @"\" + project;
             string run = "npm i react-native-elements && npm i react-native-vector-icons";
-            string finalAccess = path.Substring(0, 2) + " " + "&& cd " + access + @"\ &&" + " " + run;
+            string finalAccess = path.Substring(0, 2) + " " + "&& cd " + access + @"\ && " + run;
 
             return finalAccess;
         }
@@ -50,7 +51,7 @@ namespace ReactNative
             Console.WriteLine("Selecciona una opción del menú: " +
                "\n1. Iniciar un proyecto nuevo" +
                "\n2. Abrir un proyecto existente" +
-               "\n3. Instalar librerias React Native Elements y Vector" +
+               "\n3. Instalar librerias React Native Elements y Vector Icons" +
                "\n4. Salir");
             int menu = int.Parse(Console.ReadLine());
 
@@ -62,7 +63,7 @@ namespace ReactNative
             cmd.StartInfo.FileName = "cmd.exe";
             cmd.StartInfo.RedirectStandardInput = true;
             cmd.StartInfo.RedirectStandardOutput = true;
-            cmd.StartInfo.CreateNoWindow = true;
+            cmd.StartInfo.CreateNoWindow = false;
             cmd.StartInfo.UseShellExecute = false;
             cmd.Start();
 
@@ -84,7 +85,7 @@ namespace ReactNative
             {
                 case 1:
                     ExecuteCommand(showDir(pathOrigin));
-                    ExecuteCommand(AccessCreateStart(pathOrigin));
+                    ExecuteCommand(AccessCreate(pathOrigin));
                     ;
                     break;
                 case 2:
