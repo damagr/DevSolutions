@@ -77,15 +77,12 @@ namespace ReactNative
             switch (Menu(pathOrigin))
             {
                 case 1:
-                    ExecuteCommand(ShowDirectory(pathOrigin));
                     ExecuteCommand(CreateProject(pathOrigin));
                     break;
                 case 2:
-                    ExecuteCommand(ShowDirectory(pathOrigin));
                     ExecuteCommand(StartProject(pathOrigin));
                     break;
                 case 3:
-                    ExecuteCommand(ShowDirectory(pathOrigin));
                     ExecuteCommand(InstallLibraries(pathOrigin));
                     break;
                 case 4:
