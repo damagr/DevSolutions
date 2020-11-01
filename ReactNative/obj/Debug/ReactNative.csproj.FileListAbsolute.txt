@@ -4,3 +4,4 @@ D:\Documentos\Clase-Cursos\DAM\Segundo\Ejecutables\ReactNative\ReactNative\bin\D
 D:\Documentos\Clase-Cursos\DAM\Segundo\Ejecutables\ReactNative\ReactNative\obj\Debug\ReactNative.csproj.CoreCompileInputs.cache
 D:\Documentos\Clase-Cursos\DAM\Segundo\Ejecutables\ReactNative\ReactNative\obj\Debug\ReactNative.exe
 D:\Documentos\Clase-Cursos\DAM\Segundo\Ejecutables\ReactNative\ReactNative\obj\Debug\ReactNative.pdb
+D:\Documentos\Clase-Cursos\DAM\Segundo\Ejecutables\ReactNative\ReactNative\obj\Debug\ReactNative.csprojAssemblyReference.cache
