@@ -234,7 +234,5 @@ namespace ReactNative
                     break;
             }
         }
-
-
     }
 }
