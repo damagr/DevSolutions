@@ -178,12 +178,12 @@ namespace ReactNative
                 case 1:
                     pathOrigin = AskPath();
                     ShowDirectory(pathOrigin);
-                    ExecuteCommand(CreateProject(pathOrigin));
+                    ExecuteCommand(StartProject(pathOrigin));
                     break;
                 case 2:
                     pathOrigin = AskPath();
                     ShowDirectory(pathOrigin);
-                    ExecuteCommand(StartProject(pathOrigin));
+                    ExecuteCommand(CreateProject(pathOrigin));
                     break;
                 case 3:
                     ExecuteCommand(Chocolatey());
