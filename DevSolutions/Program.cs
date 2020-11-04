@@ -5,6 +5,7 @@ namespace ReactNative
 {
     class Program
     {
+        /* FUNCIONES PARA AHORRAR LINEAS*/
         private static int Menu()
         {
             Console.Clear();
@@ -40,6 +41,27 @@ namespace ReactNative
             Console.Clear();
             ExecuteCommand("dir " + path);
         }
+
+        /* FUNCIÓN QUE EJECUTA EL COMANDO POR EL CMD */
+        private static void ExecuteCommand(string command)
+        {
+            Process cmd = new Process();
+            cmd.StartInfo.FileName = "cmd.exe";
+            cmd.StartInfo.RedirectStandardInput = true;
+            cmd.StartInfo.RedirectStandardOutput = true;
+            cmd.StartInfo.CreateNoWindow = false;
+            cmd.StartInfo.UseShellExecute = false;
+            cmd.Start();
+
+            cmd.StandardInput.WriteLine(command);
+            cmd.StandardInput.Flush();
+            cmd.StandardInput.Close();
+            cmd.WaitForExit();
+            Console.WriteLine(cmd.StandardOutput.ReadToEnd());
+        }
+
+        /* OPCIONES DEL MENÚ */
+
         private static string CreateProject(string path)
         {
             Console.Write("Indicame como llamaremos al proyecto: ");
@@ -127,12 +149,9 @@ namespace ReactNative
 
         private static string StartLiveServer(string path)
         {
-            Console.Write("Indicame que proyecto usaremos: ");
-            string project = Console.ReadLine();
-
             string live = "&& live-server --port=80 --browser=Chrome";
 
-            return path.Substring(0, 2) + " " + "&& cd " + path + @"\" + project + " " + live;
+            return path.Substring(0, 2) + " " + "&& cd " + path + " " + live;
         }
         private static string InstallXampp()
         {
@@ -148,22 +167,7 @@ namespace ReactNative
             return xampp;
         }
 
-        private static void ExecuteCommand(string command)
-        {
-            Process cmd = new Process();
-            cmd.StartInfo.FileName = "cmd.exe";
-            cmd.StartInfo.RedirectStandardInput = true;
-            cmd.StartInfo.RedirectStandardOutput = true;
-            cmd.StartInfo.CreateNoWindow = false;
-            cmd.StartInfo.UseShellExecute = false;
-            cmd.Start();
-
-            cmd.StandardInput.WriteLine(command);
-            cmd.StandardInput.Flush();
-            cmd.StandardInput.Close();
-            cmd.WaitForExit();
-            Console.WriteLine(cmd.StandardOutput.ReadToEnd());
-        }
+        /* EJECUCIÓN DEL PROGRAMA */
 
         static void Main(string[] args)
         {
@@ -223,7 +227,6 @@ namespace ReactNative
                 case 14:
                     ExecuteCommand(UninstalXampp());
                     break;
-
                 case 15:
                     Console.WriteLine();
                     break;
