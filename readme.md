@@ -55,7 +55,7 @@ Para realizar la instalación de Android Studio, accederemos a la documentación
 al apartado en el que explican como instalarlo ya que tenemos que configurar bastantes cosas y esto nos 
 va a requerir tener buena calidad de conexión a internet y espacio en nuestro disco duro. 
 
-####¡Importante!
+#### ¡Importante!
 
 Cuando lleguemos al punto 4 de la configuración de Android Studio, no seguir configurando más.
 
@@ -63,7 +63,7 @@ Cuando lleguemos al punto 4 de la configuración de Android Studio, no seguir co
 
     https://reactnative.dev/docs/environment-setup
 
-###En caso de tener incidencias con React a la hora de iniciar o ejecutar, proporcionamos un hilo que ha ayudadoen ocasiones a partir de la versión de node 15.0.1
+### En caso de tener incidencias con React a la hora de iniciar o ejecutar, proporcionamos un hilo que ha ayudadoen ocasiones a partir de la versión de node 15.0.1
 
 + Revisando este script que creó muy amablemente un señor en github:
 
