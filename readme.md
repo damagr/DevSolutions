@@ -44,7 +44,9 @@ Como recomendación, debemos instalar chocolatey para tratar de instalar todo po
     ```
     choco install -g -y nodejs.install openjdk8
 
-    npm -g react-native-cli
+    npm install -g react-native-cli
+   
+    npm install -g npm
     ```
 3. Para realizar la instalación de Android Studio, accederemos a la documentación de reactnative e iremos
 al apartado en el que explican como instalarlo ya que tenemos que configurar bastantes cosas y esto nos 
@@ -54,22 +56,6 @@ va a requerir tener buena calidad de conexión a internet y espacio en nuestro d
     Cuando lleguemos al punto 4 de la configuración de Android Studio, no seguir configurando más.
 
     https://reactnative.dev/docs/environment-setup
-4. Si hemos cambiado de equipo o hemos realizado un formateo del PC, debemos tener en cuenta que esta APP 
-no va a funcionar correctamente, esto es debido a que por algún motivo, en node_modules se almacena en caché
-información del antiguo equipo.
-
-    Tenemos dos formas de solucionarlo, extraer nuestro fichero APP.js a un directorio seguro y hacer un
-    ```
-    npx react-native init nombre_proyecto
-    ```
-       
-     Revisando este script que creó muy amablemente un señor en github:
-     
-     https://gist.github.com/jarretmoses/c2e4786fd342b3444f3bc6beff32098d
-
-     En este hilo de stackoverflow se habla de ambos temas que he comentado y se soluciona:
-     
-     https://stackoverflow.com/questions/37612660/react-native-run-android-is-unrecognized
 
 ## Licencia ©  
 
