@@ -1,0 +1,6 @@
+D:\Anonnymous\Documentos\Clase-Cursos\DAM\Segundo\Ejecutables\DevSolutions\DevSolutions\obj\Release\DevSolutions.csproj.CoreCompileInputs.cache
+D:\Anonnymous\Documentos\Clase-Cursos\DAM\Segundo\Ejecutables\DevSolutions\DevSolutions\bin\Release\DevSolutions.exe.config
+D:\Anonnymous\Documentos\Clase-Cursos\DAM\Segundo\Ejecutables\DevSolutions\DevSolutions\bin\Release\DevSolutions.exe
+D:\Anonnymous\Documentos\Clase-Cursos\DAM\Segundo\Ejecutables\DevSolutions\DevSolutions\bin\Release\DevSolutions.pdb
+D:\Anonnymous\Documentos\Clase-Cursos\DAM\Segundo\Ejecutables\DevSolutions\DevSolutions\obj\Release\DevSolutions.exe
+D:\Anonnymous\Documentos\Clase-Cursos\DAM\Segundo\Ejecutables\DevSolutions\DevSolutions\obj\Release\DevSolutions.pdb
