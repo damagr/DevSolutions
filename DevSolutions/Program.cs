@@ -9,21 +9,24 @@ namespace ReactNative
         private static int Menu()
         {
             Console.Clear();
+            Console.WriteLine("Aclaración: Cuando el asistente nos pida que le indiquemos la ruta donde se almacenan " +
+               "los proyectos no letenemos que indicar el directorio del proyecto en concreto que queremos iniciar," +
+               "tenemos que indicar solamente el directorio que almacena todos los proyectos que tenemos\n");
             Console.WriteLine("Selecciona una opción del menú: " +
                "\n1. Abrir un proyecto existente (Hace falta tener instaladas las opciones 4, 5 y 6 del menú)" +
                "\n2. Iniciar un proyecto nuevo (Hace falta tener instaladas las opciones 4, 5 y 6 del menú)" +
                "\n3. Instalar Chocolatey" +
-               "\n4. Instalar Node y Java8 (Hace falta tener instalado Chocolatey)" +
-               "\n5. Instalar React Native y NPM (Globalmente)" +
-               "\n6. Instalar Android Studio (Hace falta tener instalado Chocolatey)" +
-               "\n7. Instalar librerias React Native Elements y Vector Icons (Por proyecto)" +
-               "\n8. Instalar lodash (Globalmente) (Hace falta tener instalado Node)" +
-               "\n9. Instalar underscore (Globalmente) (Hace falta tener instalado Node)" +
-               "\n10. Instalar browserify (Por proyecto) (Hace falta tener instalado Node)" +
-               "\n11. Instalar Live-Server (Globalmente) (Hace falta tener instalado Google Chrome)" +
-               "\n12. Iniciar Live-Server (Hace falta tener instalada la opción 11)" +
-               "\n13. Instalar Xampp (Hace falta tener instalado Chocolatey)" +
-               "\n14. Desinstalar Xampp (Hace falta tener instalado Chocolatey)" +
+               "\n4. Instalar Node y Java8 (Requiere Chocolatey) (Necesario para trabajar con React-Native)" +
+               "\n5. Instalar React Native y NPM (Globalmente) (Necesario para trabajar con React-Native)" +
+               "\n6. Instalar Android Studio (Requiere Chocolatey) (Necesario para trabajar con React-Native)" +
+               "\n7. Instalar librerias React Native Elements y Vector Icons (Por proyecto) (Requiere Node)" +
+               "\n8. Instalar lodash (Globalmente) (Requiere Node)" +
+               "\n9. Instalar underscore (Globalmente) (Requiere Node)" +
+               "\n10. Instalar browserify (Por proyecto) (Requiere Node)" +
+               "\n11. Instalar Live-Server (Globalmente) (Requiere Google Chrome)" +
+               "\n12. Iniciar Live-Server (Requiere Live-Server)" +
+               "\n13. Instalar Xampp (Requiere Chocolatey)" +
+               "\n14. Desinstalar Xampp (Requiere Chocolatey)" +
                "\n15. Salir");
             int menu = int.Parse(Console.ReadLine());
 
