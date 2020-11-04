@@ -1,0 +1,7 @@
+D:\Anonnymous\Documentos\Clase-Cursos\DAM\Segundo\Ejecutables\DevSolutions\DevSolutions\bin\Debug\ReactNative.exe.config
+D:\Anonnymous\Documentos\Clase-Cursos\DAM\Segundo\Ejecutables\DevSolutions\DevSolutions\bin\Debug\ReactNative.exe
+D:\Anonnymous\Documentos\Clase-Cursos\DAM\Segundo\Ejecutables\DevSolutions\DevSolutions\bin\Debug\ReactNative.pdb
+D:\Anonnymous\Documentos\Clase-Cursos\DAM\Segundo\Ejecutables\DevSolutions\DevSolutions\obj\Debug\DevSolutions.csprojAssemblyReference.cache
+D:\Anonnymous\Documentos\Clase-Cursos\DAM\Segundo\Ejecutables\DevSolutions\DevSolutions\obj\Debug\DevSolutions.csproj.CoreCompileInputs.cache
+D:\Anonnymous\Documentos\Clase-Cursos\DAM\Segundo\Ejecutables\DevSolutions\DevSolutions\obj\Debug\ReactNative.exe
+D:\Anonnymous\Documentos\Clase-Cursos\DAM\Segundo\Ejecutables\DevSolutions\DevSolutions\obj\Debug\ReactNative.pdb

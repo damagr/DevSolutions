@@ -20,9 +20,10 @@ namespace ReactNative
                "\n9. Instalar underscore (Globalmente) (Hace falta tener instalado Node)" +
                "\n10. Instalar browserify (Por proyecto) (Hace falta tener instalado Node)" +
                "\n11. Instalar Live-Server (Globalmente) (Hace falta tener instalado Google Chrome)" +
-               "\n12. Instalar Xampp (Hace falta tener instalado Chocolatey)" +
-               "\n13. Desinstalar Xampp (Hace falta tener instalado Chocolatey)" +
-               "\n14. Salir");
+               "\n12. Iniciar Live-Server (Hace falta tener instalada la opción 11)" +
+               "\n13. Instalar Xampp (Hace falta tener instalado Chocolatey)" +
+               "\n14. Desinstalar Xampp (Hace falta tener instalado Chocolatey)" +
+               "\n15. Salir");
             int menu = int.Parse(Console.ReadLine());
 
             return menu;
@@ -117,7 +118,7 @@ namespace ReactNative
             return path.Substring(0, 2) + " " + "&& cd " + path + @"\" + project + " " + browser;
         }
 
-        private static string LiveServer()
+        private static string InstallLiveServer()
         {
             string live = "npm install -g live-server";
 
@@ -209,16 +210,22 @@ namespace ReactNative
                     ExecuteCommand(Browserify(pathOrigin));
                     break;
                 case 11:
-                    ExecuteCommand(LiveServer());
+                    ExecuteCommand(InstallLiveServer());
                     break;
                 case 12:
-                    ExecuteCommand(InstallXampp());
+                    pathOrigin = AskPath();
+                    ShowDirectory(pathOrigin);
+                    ExecuteCommand(StartLiveServer(pathOrigin));
                     break;
                 case 13:
-                    ExecuteCommand(UninstalXampp());
+                    ExecuteCommand(InstallXampp());
                     break;
                 case 14:
-                    Console.WriteLine("Hasta pronto!");
+                    ExecuteCommand(UninstalXampp());
+                    break;
+
+                case 15:
+                    Console.WriteLine();
                     break;
                 default:
                     break;
