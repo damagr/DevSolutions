@@ -17,7 +17,7 @@ namespace ReactNative
                "\n2. Iniciar un proyecto nuevo (Hace falta tener instaladas las opciones 4, 5 y 6 del menú)" +
                "\n3. Instalar Chocolatey" +
                "\n4. Instalar Node y Java8 (Requiere Chocolatey) (Necesario para trabajar con React-Native)" +
-               "\n5. Instalar React Native y NPM (Globalmente) (Necesario para trabajar con React-Native)" +
+               "\n5. Instalar NPM (Globalmente) (Necesario para trabajar con React-Native)" +
                "\n6. Instalar Android Studio (Requiere Chocolatey) (Necesario para trabajar con React-Native)" +
                "\n7. Instalar librerias React Native Elements y Vector Icons (Por proyecto) (Requiere Node)" +
                "\n8. Instalar lodash (Globalmente) (Requiere Node)" +
@@ -98,7 +98,7 @@ namespace ReactNative
 
         private static string ReactNPM()
         {
-            string reactNPM = "npm install -g react-native-cli && npm install -g npm";
+            string reactNPM = "npm uninstall -g react-native-cli --remove-dependencies && npm install -g npm";
 
             return reactNPM;
         }

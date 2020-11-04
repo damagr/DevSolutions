@@ -19,7 +19,7 @@ y librerias de react-native.
     2. Iniciar un proyecto nuevo (Crearemos un proyecto de React-Native)
     3. Instalar Chocolatey
     4. Instalar Node y Java8 **(Requiere Chocolatey) (Necesario para trabajar con React-Native)**
-    5. Instalar React Native y NPM (Globalmente) **(Necesario para trabajar con React-Native)**
+    5. Instalar NPM (Globalmente) **(Necesario para trabajar con React-Native)**
     6. Instalar Android Studio (Requiere Chocolatey) **(Necesario para trabajar con React-Native)**
     7. Instalar librerias React Native Elements y Vector Icons (Por proyecto) **(Requiere Node)**
     8. Instalar lodash (Globalmente) **(Requiere Node)**
