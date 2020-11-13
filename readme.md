@@ -1,4 +1,4 @@
-# DevSolutions - DaMaGr
+# DevSolutions By damagr & Ferriol-blip  
 
 ## Presentación 📕
 
