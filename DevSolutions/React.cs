@@ -21,11 +21,18 @@ namespace DevSolutions
             return path.Substring(0, 2) + " " + "&& cd " + path + @"\" + project + " " + run;
         }
 
-        public static string NodejsAndJava8()
+        public static string AndroidStudio()
         {
-            string nodeJava = "choco install -y nodejs.install openjdk8";
+            string aStudio = "choco install androidstudio -y";
 
-            return nodeJava;
+            return aStudio;
+        }
+
+        public static string Java8()
+        {
+            string java = "choco install -y openjdk8";
+
+            return java;
         }
 
         public static string ReactNPM()
@@ -34,13 +41,6 @@ namespace DevSolutions
 
             return reactNPM;
         }
-        public static string AndroidStudio()
-        {
-            string aStudio = "choco install androidstudio -y";
-
-            return aStudio;
-        }
-
         public static string ElementsAndVectorIcons(string path)
         {
             Console.Write("Indicame que proyecto usaremos: ");

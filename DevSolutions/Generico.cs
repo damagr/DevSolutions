@@ -8,6 +8,13 @@
 
             return choco;
         }
+
+        public static string NodeJs()
+        {
+            string node = "choco install -y nodejs.install";
+
+            return node;
+        }
         public static string InstallXampp()
         {
             string xampp = "choco install -y bitnami-xampp ";
