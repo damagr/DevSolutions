@@ -7,31 +7,35 @@ y librerias de react-native.
 
 ## Funcionalidad 📖
 
-1. Introduciremos el disco sobre el que trabajaremos y la ruta sobre la que almacenamos los proyectos.
+I. Introduciremos el disco sobre el que trabajaremos y la ruta sobre la que almacenamos los proyectos.
 
-2. Entre un sencillo menú, escogeremos entre las siguientes opciones:  
+II. Entre un sencillo menú que en algunos casos nos llevará a otros submenús, escogeremos entre las siguientes opciones:  
 
-    *_Aclaración: Cuando el asistente nos pida que le indiquemos la ruta donde se almacenan los proyectos no le_*
-    *_tenemos que indicar el directorio del proyecto en concreto que queremos iniciar, tenemos que indicar_*
-    *_solamente el directorio que almacena todos los proyectos que tenemos._*
-    
-    1. Abrir un proyecto existente (Abriremos un proyecto de react-native con el emulador de Android)
-    2. Iniciar un proyecto nuevo (Crearemos un proyecto de React-Native)
-    3. Instalar Chocolatey
-    4. Instalar Node y Java8 **(Requiere Chocolatey) (Necesario para trabajar con React-Native)**
-    5. Instalar NPM (Globalmente) **(Necesario para trabajar con React-Native)**
-    6. Instalar Android Studio (Requiere Chocolatey) **(Necesario para trabajar con React-Native)**
-    7. Instalar librerias React Native Elements y Vector Icons (Por proyecto) **(Requiere Node)**
-    8. Instalar lodash (Globalmente) **(Requiere Node)**
-    9. Instalar underscore (Globalmente) **(Requiere Node)**
-    10. Instalar browserify (Por proyecto) **(Requiere Node)**
-    11. Instalar Live-Server (Globalmente) **(Requiere Google Chrome)**
-    12. Iniciar Live-Server **(Requiere Live-Server)**
-    13. Instalar Xampp **(Requiere Chocolatey)**
-    14. Desinstalar Xampp **(Requiere Chocolatey)**
-    15. Salir
+*_Aclaración: Cuando el asistente nos pida que le indiquemos la ruta donde se almacenan los proyectos no le_*
+*_tenemos que indicar el directorio del proyecto en concreto que queremos iniciar, tenemos que indicar_*
+*_solamente el directorio que almacena todos los proyectos que tenemos._*
 
-3. En caso de realizar la instalación de las librerias de la opción 7, para que funcionen correctamente los
+1. Instalar Chocolatey (Necesario para el funcionamiento de la APP)
+2. Instalar NodeJs (Requiere Chocolatey) (Necesario para el funcionamiento de la APP)
+3. React  
+    3.1. Abrir un proyecto existente (Hace falta tener instaladas NPM, Node, Java8)  
+    3.2. Iniciar un proyecto nuevo (Hace falta tener instaladas NPM, Node, Java8)  
+    3.3. Instalar librerias React Native Elements y Vector Icons (Por proyecto) (Requiere Node)  
+    3.4. Instalar Java8 (Requiere NodeJs)  
+    3.5. Instalar NPM (Global) - (Requiere NodeJs)  
+    3.6. Instalar Android Studio (Requiere Chocolatey)  
+4. Librerias Javascript  
+    4.1. Instalar lodash (Globalmente) (Requiere Node)  
+    4.2. Instalar underscore (Globalmente) (Requiere Node)  
+    4.3. Instalar browserify (Por proyecto) (Requiere Node)  
+5. Utilidades Web  
+    5.1. Instalar Xampp (Requiere Chocolatey)  
+    5.2. Desinstalar Xampp (Requiere Chocolatey)  
+6. Instalaciones genéricas  
+    6.1. Instalar Live-Server (Globalmente) (Requiere Google Chrome)  
+    6.2. Iniciar Live-Server (Requiere Live-Server)  
+
+III. En caso de realizar la instalación de las librerias de la opción 7, para que funcionen correctamente los
  iconos, habremos de leer la documentación aportada a continuación en caso de estar trabajando con Android:
 
     https://github.com/oblador/react-native-vector-icons#android
