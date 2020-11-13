@@ -7,9 +7,7 @@ y librerias de react-native.
 
 ## Funcionalidad 📖
 
-I. Introduciremos el disco sobre el que trabajaremos y la ruta sobre la que almacenamos los proyectos.
-
-II. Entre un sencillo menú que en algunos casos nos llevará a otros submenús, escogeremos entre las siguientes opciones:  
+I. Entre un sencillo menú que en algunos casos nos llevará a otros submenús, escogeremos entre las siguientes opciones:  
 
 *_Aclaración: Cuando el asistente nos pida que le indiquemos la ruta donde se almacenan los proyectos no le_*
 *_tenemos que indicar el directorio del proyecto en concreto que queremos iniciar, tenemos que indicar_*
@@ -35,7 +33,7 @@ II. Entre un sencillo menú que en algunos casos nos llevará a otros submenús,
     6.1. Instalar Live-Server (Globalmente) (Requiere Google Chrome)  
     6.2. Iniciar Live-Server (Requiere Live-Server)  
 
-III. En caso de realizar la instalación de las librerias de la opción 7, para que funcionen correctamente los
+II. En caso de realizar la instalación de las librerias de la opción 7, para que funcionen correctamente los
  iconos, habremos de leer la documentación aportada a continuación en caso de estar trabajando con Android:
 
     https://github.com/oblador/react-native-vector-icons#android
