@@ -4,7 +4,6 @@ D:\Anonnymous\Documentos\Clase-Cursos\DAM\Segundo\Ejecutables\DevSolutions\DevSo
 D:\Anonnymous\Documentos\Clase-Cursos\DAM\Segundo\Ejecutables\DevSolutions\DevSolutions\bin\Release\DevSolutions.pdb
 D:\Anonnymous\Documentos\Clase-Cursos\DAM\Segundo\Ejecutables\DevSolutions\DevSolutions\obj\Release\DevSolutions.exe
 D:\Anonnymous\Documentos\Clase-Cursos\DAM\Segundo\Ejecutables\DevSolutions\DevSolutions\obj\Release\DevSolutions.pdb
-D:\Anonnymous\Documentos\Clase-Cursos\DAM\Segundo\Ejecutables\DevSolutions\DevSolutions\obj\Release\DevSolutions.csprojAssemblyReference.cache
 C:\Users\ferri\ProyectoDevSolution\DevSolutions\bin\Release\DevSolutions.exe.config
 C:\Users\ferri\ProyectoDevSolution\DevSolutions\bin\Release\DevSolutions.exe
 C:\Users\ferri\ProyectoDevSolution\DevSolutions\bin\Release\DevSolutions.pdb

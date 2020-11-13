@@ -7,7 +7,7 @@ namespace DevSolutions
         public static int MainMenu()
         {
             Console.Clear();
-            Console.WriteLine("MENU PRINCIPAL\n");
+            Console.WriteLine("\t\t\t\t\t\t\tMENU PRINCIPAL\n");
             Console.WriteLine("Selecciona una opción del menú: " +
                  "\n1. Instalar Chocolatey (Necesario para el funcionamiento de la APP)" +
                  "\n2. Instalar NodeJs (Requiere Chocolatey) (Necesario para el funcionamiento de la APP)" + 
