@@ -31,15 +31,9 @@ namespace ReactNative
                     CMD.ExecuteCommand(Generico.Chocolatey());
                     break;
                 case 2:
-                    CMD.ExecuteCommand(React.ReactNPM());
+                    CMD.ExecuteCommand(Generico.NodeJs());
                     break;
                 case 3:
-                    CMD.ExecuteCommand(React.NodejsAndJava8());
-                    break;
-                case 4:
-                    CMD.ExecuteCommand(React.AndroidStudio());
-                    break;
-                case 5:
                     switch (Menus.ReactMenu())
                     {
                         case 1:
@@ -58,13 +52,22 @@ namespace ReactNative
                             CMD.ExecuteCommand(React.ElementsAndVectorIcons(pathOrigin));
                             break;
                         case 4:
+                            CMD.ExecuteCommand(React.Java8());
+                            break;
+                        case 5:
+                            CMD.ExecuteCommand(React.ReactNPM());
+                            break;
+                        case 6:
+                            CMD.ExecuteCommand(React.AndroidStudio());
+                            break;
+                        case 7:
                             break;
                         default:
                             break;
                     }
                     break;
-                case 6:
-                    switch (Menus.NodeMenu())
+                case 4:
+                    switch (Menus.JavascriptLibraries())
                     {
                         case 1:
                             CMD.ExecuteCommand(Javascript.Lodash());
@@ -78,21 +81,30 @@ namespace ReactNative
                             CMD.ExecuteCommand(Javascript.Browserify(pathOrigin));
                             break;
                         case 4:
-                            CMD.ExecuteCommand(Web.InstallLiveServer());
-                            break;
-                        case 5:
-                            pathOrigin = AskPath();
-                            ShowDirectory(pathOrigin);
-                            CMD.ExecuteCommand(Web.StartLiveServer(pathOrigin));
-                            break;
-                        case 6:
                             break;
                         default:
                             break;
                     }
                     break;
-                case 7:
-                    switch (Menus.XampMenu())
+                case 5:
+                    switch (Menus.WebTools())
+                    {
+                        case 1:
+                            CMD.ExecuteCommand(Web.InstallLiveServer());
+                            break;
+                        case 2:
+                            pathOrigin = AskPath();
+                            ShowDirectory(pathOrigin);
+                            CMD.ExecuteCommand(Web.StartLiveServer(pathOrigin));
+                            break;
+                        case 3:
+                            break;
+                        default:
+                            break;
+                    }
+                    break;
+                case 6:
+                    switch (Menus.GenericInstall())
                     {
                         case 1:
                             CMD.ExecuteCommand(Generico.InstallXampp());
@@ -106,7 +118,7 @@ namespace ReactNative
                             break;
                     }
                     break;
-                case 8:
+                case 7:
                     Console.WriteLine();
                     break;
                 default:
