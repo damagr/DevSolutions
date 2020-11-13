@@ -7,7 +7,7 @@ namespace DevSolutions
         public static int MainMenu()
         {
             Console.Clear();
-            Console.WriteLine("\t\t\t\t\t\t\tMENU PRINCIPAL\n");
+            Console.WriteLine("\t\t\t\t\t\tMENU PRINCIPAL\n");
             Console.WriteLine("Selecciona una opción del menú: " +
                  "\n1. Instalar Chocolatey (Necesario para el funcionamiento de la APP)" +
                  "\n2. Instalar NodeJs (Requiere Chocolatey) (Necesario para el funcionamiento de la APP)" + 
@@ -25,6 +25,7 @@ namespace DevSolutions
         public static int ReactMenu()
         {
             Console.Clear();
+            Console.WriteLine("\t\t\t\t\t\t\tMENU REACT\n");
             Console.WriteLine("Aclaración: Cuando el asistente nos pida que le indiquemos la ruta donde se almacenan " +
                "los proyectos no letenemos que indicar el directorio del proyecto en concreto que queremos iniciar," +
                "tenemos que indicar solamente el directorio que almacena todos los proyectos que tenemos\n");
@@ -45,6 +46,7 @@ namespace DevSolutions
         public static int JavascriptLibraries()
         {
             Console.Clear();
+            Console.WriteLine("\t\t\t\t\t\tMENU JAVASCRIPT\n");
             Console.WriteLine("Aclaración: Cuando el asistente nos pida que le indiquemos la ruta donde se almacenan " +
             "los proyectos no letenemos que indicar el directorio del proyecto en concreto que queremos iniciar," +
             "tenemos que indicar solamente el directorio que almacena todos los proyectos que tenemos\n");
@@ -62,6 +64,7 @@ namespace DevSolutions
         public static int GenericInstall()
         {
             Console.Clear();
+            Console.WriteLine("\t\t\t\t\t\tMENU INSTALACIONES GENÉRICAS\n");
             Console.WriteLine("Selecciona una opción del menú: " +
                "\n1. Instalar Xampp (Requiere Chocolatey)" +
                "\n2. Desinstalar Xampp (Requiere Chocolatey)" +
@@ -75,6 +78,7 @@ namespace DevSolutions
         public static int WebTools()
         {
             Console.Clear();
+            Console.WriteLine("\t\t\t\t\t\t\tMENU WEB\n");
             Console.WriteLine("Aclaración: Cuando el asistente nos pida que le indiquemos la ruta donde se almacenan " +
                "los proyectos no letenemos que indicar el directorio del proyecto en concreto que queremos iniciar," +
                "tenemos que indicar solamente el directorio que almacena todos los proyectos que tenemos\n");
