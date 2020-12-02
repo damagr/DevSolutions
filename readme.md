@@ -3,7 +3,8 @@
 ## Presentación 📕
 
 Esta sencilla aplicación se ha creado para agilizar el proceso de creación, apertura e instalación de proyectos
-y librerias de react-native.
+y librerias de react, react-native y realizar instalaciones de software requerido para trabajar con las asignaturas
+de 2º de DAM.
 
 ## Funcionalidad 📖
 
@@ -15,14 +16,14 @@ I. Entre un sencillo menú que en algunos casos nos llevará a otros submenús, 
 
 1. Instalar Chocolatey (Necesario para el funcionamiento de la APP)
 2. Instalar NodeJs (Requiere Chocolatey) (Necesario para el funcionamiento de la APP)
-3. React  
+3. React y React-Native   
     3.1. Abrir un proyecto existente (Hace falta tener instaladas NPM, Node, Java8)  
     3.2. Iniciar un proyecto nuevo (React-Native) (Hace falta tener instaladas NPM, Node, Java8)  
-    3.3. Iniciar un proyecto nuevo (React) (Hace falta tener instaladas NPM, Node)
-    3.3. Instalar librerias React Native Elements y Vector Icons (Por proyecto) (Requiere Node)  
-    3.4. Instalar Java8 (Requiere NodeJs)  
-    3.5. Instalar NPM (Global) - (Requiere NodeJs)  
-    3.6. Instalar Android Studio (Requiere Chocolatey)  
+    3.3. Iniciar un proyecto nuevo (React) (Hace falta tener instaladas NPM, Node)  
+    3.4. Instalar librerias React Native Elements y Vector Icons (Por proyecto) (Requiere Node)  
+    3.5. Instalar Java8 (Requiere NodeJs)  
+    3.6. Instalar NPM (Global) - (Requiere NodeJs)  
+    3.7. Instalar Android Studio (Requiere Chocolatey)  
 4. Librerias Javascript  
     4.1. Instalar lodash (Globalmente) (Requiere Node)  
     4.2. Instalar underscore (Globalmente) (Requiere Node)  
