@@ -28,10 +28,10 @@ I. Entre un sencillo menú que en algunos casos nos llevará a otros submenús, 
     4.1. Instalar lodash (Globalmente) (Requiere Node)  
     4.2. Instalar underscore (Globalmente) (Requiere Node)  
     4.3. Instalar browserify (Por proyecto) (Requiere Node)  
-5. Utilidades Web  
+5. Instalaciones genéricas  
     5.1. Instalar Xampp (Requiere Chocolatey)  
     5.2. Desinstalar Xampp (Requiere Chocolatey)  
-6. Instalaciones genéricas  
+6. Utilidades Web  
     6.1. Instalar Live-Server (Globalmente) (Requiere Google Chrome)  
     6.2. Iniciar Live-Server (Requiere Live-Server)  
 
