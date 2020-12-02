@@ -17,7 +17,8 @@ I. Entre un sencillo menú que en algunos casos nos llevará a otros submenús, 
 2. Instalar NodeJs (Requiere Chocolatey) (Necesario para el funcionamiento de la APP)
 3. React  
     3.1. Abrir un proyecto existente (Hace falta tener instaladas NPM, Node, Java8)  
-    3.2. Iniciar un proyecto nuevo (Hace falta tener instaladas NPM, Node, Java8)  
+    3.2. Iniciar un proyecto nuevo (React-Native) (Hace falta tener instaladas NPM, Node, Java8)  
+    3.3. Iniciar un proyecto nuevo (React) (Hace falta tener instaladas NPM, Node)
     3.3. Instalar librerias React Native Elements y Vector Icons (Por proyecto) (Requiere Node)  
     3.4. Instalar Java8 (Requiere NodeJs)  
     3.5. Instalar NPM (Global) - (Requiere NodeJs)  
