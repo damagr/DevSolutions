@@ -67,7 +67,7 @@ Cuando lleguemos al punto 4 de la configuración de Android Studio, no seguir co
 
     https://reactnative.dev/docs/environment-setup
 
-### En caso de tener incidencias con React a la hora de iniciar o ejecutar, proporcionamos un hilo que ha ayudado en ocasiones a partir de la versión de node 15.0.1
+### En caso de tener incidencias con React-Native a la hora de iniciar o ejecutar, proporcionamos un hilo que ha ayudado en ocasiones a partir de la versión de node 15.0.1
 
 + Revisando este script que creó muy amablemente un señor en github:
 
