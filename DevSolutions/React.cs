@@ -4,14 +4,21 @@ namespace DevSolutions
 {
     public static class React
     {
-        public static string CreateProject(string path)
+        public static string CreateReactProject(string path)
+        {
+            Console.Write("Indicame como llamaremos al proyecto: ");
+            string project = Console.ReadLine();
+
+            return path.Substring(0, 2) + " " + "&& cd " + path + " " + "&& " + "npx create-react-app " + project;
+        }
+        public static string CreateReactNativeProject(string path)
         {
             Console.Write("Indicame como llamaremos al proyecto: ");
             string project = Console.ReadLine();
 
             return path.Substring(0, 2) + " " + "&& cd " + path + " " + "&& " + "npx react-native init " + project;
         }
-        public static string StartProject(string path)
+        public static string StartReactNativeProject(string path)
         {
             Console.Write("Indicame que proyecto usaremos: ");
             string project = Console.ReadLine();

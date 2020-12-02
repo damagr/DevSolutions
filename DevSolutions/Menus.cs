@@ -30,13 +30,14 @@ namespace DevSolutions
                "los proyectos no letenemos que indicar el directorio del proyecto en concreto que queremos iniciar," +
                "tenemos que indicar solamente el directorio que almacena todos los proyectos que tenemos\n");
             Console.WriteLine("Selecciona una opción del menú: " +
-               "\n1. Abrir un proyecto existente (Hace falta tener instaladas NPM, Node, Java8)" +
-               "\n2. Iniciar un proyecto nuevo (Hace falta tener instaladas NPM, Node, Java8)" +
-               "\n3. Instalar librerias React Native Elements y Vector Icons (Por proyecto) (Requiere Node)" +
-               "\n4. Instalar Java8 (Requiere NodeJs)" +
-               "\n5. Instalar NPM (Global) - (Requiere NodeJs)" +
-               "\n6. Instalar Android Studio (Requiere Chocolatey)" +
-               "\n7. Salir");
+               "\n1. Abrir un proyecto existente (React-Native) (Hace falta tener instaladas NPM, Node, Java8)" +
+               "\n2. Iniciar un proyecto nuevo (React-Native) (Hace falta tener instaladas NPM, Node, Java8)" +
+               "\n3. Iniciar un proyecto nuevo (React) (Hace falta tener instaladas NPM, Node)" +
+               "\n4. Instalar librerias React Native Elements y Vector Icons (Por proyecto) (Requiere Node)" +
+               "\n5. Instalar Java8 (Requiere NodeJs)" +
+               "\n6. Instalar NPM (Global) - (Requiere NodeJs)" +
+               "\n7. Instalar Android Studio (Requiere Chocolatey)" +
+               "\n8. Salir");
 
             int reactMenu = int.Parse(Console.ReadLine());
 
