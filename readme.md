@@ -33,7 +33,9 @@ I. Entre un sencillo menú que en algunos casos nos llevará a otros submenús, 
     5.2. Desinstalar Xampp (Requiere Chocolatey)  
 6. Utilidades Web  
     6.1. Instalar Live-Server (Globalmente) (Requiere Google Chrome)  
-    6.2. Iniciar Live-Server (Requiere Live-Server)  
+    6.2. Instalar MailDev (Globalmente) (Requiere Node)  
+    6.3. Iniciar Live-Server (Requiere Live-Server)  
+    6.4. Iniciar MailDev (Requiere MailDev)  
 
 II. En caso de realizar la instalación de las librerias de la opción 7, para que funcionen correctamente los
  iconos, habremos de leer la documentación aportada a continuación en caso de estar trabajando con Android:
