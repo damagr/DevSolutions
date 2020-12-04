@@ -98,11 +98,17 @@ namespace ReactNative
                             CMD.ExecuteCommand(Web.InstallLiveServer());
                             break;
                         case 2:
+                            CMD.ExecuteCommand(Web.InstallMailDev());
+                            break;
+                        case 3:
                             pathOrigin = AskPath();
                             ShowDirectory(pathOrigin);
                             CMD.ExecuteCommand(Web.StartLiveServer(pathOrigin));
                             break;
-                        case 3:
+                        case 4:
+                            CMD.ExecuteCommand(Web.StartMailDev());
+                            break;
+                        case 5:
                             break;
                         default:
                             break;

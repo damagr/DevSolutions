@@ -13,7 +13,7 @@ namespace DevSolutions
                  "\n2. Instalar NodeJs (Requiere Chocolatey) (Necesario para el funcionamiento de la APP)" + 
                  "\n3. React (Abrir proyecto, iniciar nuevo, instalación librerias y dependencias)" +
                  "\n4. Librerias Javascript (lodash, underscore, browserify)" +
-                 "\n5. Utilidades Web (Instalar/iniciar Live-Server)" +
+                 "\n5. Utilidades Web (Instalar/iniciar Live-Server/MailDev)" +
                  "\n6. Instalaciones genéricas (Instalar/desinstalar Xampp)" +
                  "\n7. Salir");
 
@@ -84,9 +84,11 @@ namespace DevSolutions
                "los proyectos no letenemos que indicar el directorio del proyecto en concreto que queremos iniciar," +
                "tenemos que indicar solamente el directorio que almacena todos los proyectos que tenemos\n");
             Console.WriteLine("Selecciona una opción del menú: " +
-               "\n1. Instalar Live-Server (Globalmente) (Requiere Google Chrome)" +
-               "\n2. Iniciar Live-Server (Requiere Live-Server)" +
-               "\n3. Salir");
+               "\n1. Instalar Live-Server (Globalmente) (Requiere Node) (Requiere Google Chrome)" +
+               "\n2. Instalar MailDev (Globalmente) (Requiere Node)" +
+               "\n3. Iniciar Live-Server (Requiere Live-Server)" +
+               "\n4. Iniciar MailDev (Requiere MailDev)" +
+               "\n5. Salir");
 
             int webMenu = int.Parse(Console.ReadLine());
 
