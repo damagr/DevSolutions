@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="CMD.cs" />
     <Compile Include="Generico.cs" />
+    <Compile Include="Ionic.cs" />
     <Compile Include="Javascript.cs" />
     <Compile Include="Menus.cs" />
     <Compile Include="Program.cs" />

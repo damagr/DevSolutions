@@ -11,11 +11,12 @@ namespace DevSolutions
             Console.WriteLine("Selecciona una opción del menú: " +
                  "\n1. Instalar Chocolatey (Necesario para el funcionamiento de la APP)" +
                  "\n2. Instalar NodeJs (Requiere Chocolatey) (Necesario para el funcionamiento de la APP)" + 
-                 "\n3. React (Abrir proyecto, iniciar nuevo, instalación librerias y dependencias)" +
+                 "\n3. React y React-Native (Abrir proyecto, iniciar nuevo, instalación librerias y dependencias)" +
                  "\n4. Librerias Javascript (lodash, underscore, browserify)" +
                  "\n5. Utilidades Web (Instalar/iniciar Live-Server/MailDev)" +
                  "\n6. Instalaciones genéricas (Instalar/desinstalar Xampp)" +
-                 "\n7. Salir");
+                 "\n7. Ionic (Iniciar proyecto nuevo)" +
+                 "\n8. Salir");
 
             int mainMenu = int.Parse(Console.ReadLine());
 
@@ -43,7 +44,6 @@ namespace DevSolutions
 
             return reactMenu;
         }
-
         public static int JavascriptLibraries()
         {
             Console.Clear();
@@ -93,6 +93,21 @@ namespace DevSolutions
             int webMenu = int.Parse(Console.ReadLine());
 
             return webMenu;
+        }
+
+        public static int IonicMenu()
+        {
+            Console.Clear();
+            Console.WriteLine("\t\t\t\t\t\tMENU IONIC\n");
+            Console.WriteLine("Selecciona una opción del menú: " +
+               "\n1. Iniciar un proyecto nuevo (Requiere Ionic)" +
+               "\n2. Abrir Ionic en localhost (Requiere Ionic)" +
+               "\n3. Instalar Ionic (Requiere NodeJs y NPM)" +
+               "\n4. Salir");
+
+            int genericMenu = int.Parse(Console.ReadLine());
+
+            return genericMenu;
         }
     }
 }

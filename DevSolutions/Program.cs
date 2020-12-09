@@ -130,6 +130,28 @@ namespace ReactNative
                     }
                     break;
                 case 7:
+                    switch (Menus.IonicMenu())
+                    {
+                        case 1:
+                            pathOrigin = AskPath();
+                            ShowDirectory(pathOrigin);
+                            CMD.ExecuteCommand(Ionic.CreateIonicProject(pathOrigin));
+                            break;
+                        case 2:
+                            pathOrigin = AskPath();
+                            ShowDirectory(pathOrigin);
+                            CMD.ExecuteCommand(Ionic.StartIonic(pathOrigin));
+                            break;
+                        case 3:
+                            CMD.ExecuteCommand(Ionic.IonicCordova());
+                            break;
+                        case 4:
+                            break;
+                        default:
+                            break;
+                    }
+                    break;
+                case 8:
                     Console.WriteLine();
                     break;
                 default:
