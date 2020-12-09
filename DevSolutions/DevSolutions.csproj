@@ -54,6 +54,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="React.cs" />
+    <Compile Include="ReactNative.cs" />
     <Compile Include="Web.cs" />
   </ItemGroup>
   <ItemGroup>

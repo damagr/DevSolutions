@@ -15,6 +15,14 @@
 
             return node;
         }
+
+        public static string ReactNPM()
+        {
+            string reactNPM = "npm uninstall -g react-native-cli --remove-dependencies && npm install -g npm";
+
+            return reactNPM;
+        }
+
         public static string InstallXampp()
         {
             string xampp = "choco install -y bitnami-xampp ";

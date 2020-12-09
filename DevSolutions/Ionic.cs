@@ -27,7 +27,7 @@ namespace DevSolutions
             return path.Substring(0, 2) + " " + "&& cd " + path + " " + "&& " + "ionic serve";
         }
 
-        public static string IonicCordova()
+        public static string InstallIonicCordova()
         {
             string reactNPM = "npm install -g ionic cordova";
 

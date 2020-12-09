@@ -14,28 +14,34 @@ I. Entre un sencillo menú que en algunos casos nos llevará a otros submenús, 
 *_tenemos que indicar el directorio del proyecto en concreto que queremos iniciar, tenemos que indicar_*
 *_solamente el directorio que almacena todos los proyectos que tenemos._*
 
-1. Instalar Chocolatey (Necesario para el funcionamiento de la APP)
-2. Instalar NodeJs (Requiere Chocolatey) (Necesario para el funcionamiento de la APP)
-3. React y React-Native   
-    3.1. Abrir un proyecto existente (Hace falta tener instaladas NPM, Node, Java8)  
-    3.2. Iniciar un proyecto nuevo (React-Native) (Hace falta tener instaladas NPM, Node, Java8)  
-    3.3. Iniciar un proyecto nuevo (React) (Hace falta tener instaladas NPM, Node)  
-    3.4. Instalar librerias React Native Elements y Vector Icons (Por proyecto) (Requiere Node)  
-    3.5. Instalar Java8 (Requiere NodeJs)  
-    3.6. Instalar NPM (Global) - (Requiere NodeJs)  
-    3.7. Instalar Android Studio (Requiere Chocolatey)  
-4. Librerias Javascript  
-    4.1. Instalar lodash (Globalmente) (Requiere Node)  
-    4.2. Instalar underscore (Globalmente) (Requiere Node)  
-    4.3. Instalar browserify (Por proyecto) (Requiere Node)  
-5. Instalaciones genéricas  
-    5.1. Instalar Xampp (Requiere Chocolatey)  
-    5.2. Desinstalar Xampp (Requiere Chocolatey)  
-6. Utilidades Web  
-    6.1. Instalar Live-Server (Globalmente) (Requiere Google Chrome)  
-    6.2. Instalar MailDev (Globalmente) (Requiere Node)  
-    6.3. Iniciar Live-Server (Requiere Live-Server)  
-    6.4. Iniciar MailDev (Requiere MailDev)  
+1. React (Abrir proyecto e iniciar proyecto nuevo)  
+   1.1. Abrir un proyecto existente (Requiere Chrome)  
+   1.2. Iniciar un proyecto nuevo (Requiere Node y NPM)  
+2. React-Native (Abrir proyecto, iniciar nuevo, instalación librerias y software requerido)  
+   2.1. Abrir un proyecto existente (Requiere NPM, Node, Java JDK8)  
+   2.2. Iniciar un proyecto nuevo (Requiere NPM, Node, Java JDK8)  
+   2.3. Instalar Java8 (Requiere NodeJs)  
+   2.4. Instalar Android Studio (Requiere Chocolatey)  
+   2.5. Instalar librerias React Native Elements y Vector Icons (Por proyecto) (Requiere Node)  
+3. Ionic (Abrir proyecto e iniciar proyecto nuevo)  
+   3.1. Iniciar un proyecto nuevo (Requiere Ionic)  
+   3.2. Abrir Ionic en localhost (Requiere Ionic)  
+   3.3. Instalar Ionic (Requiere NodeJs y NPM)  
+4. Utilidades Web (Instalar e iniciar Live-Server/MailDev)
+   4.1. Instalar Live-Server (Globalmente) (Requiere Google Chrome)  
+   4.2. Instalar MailDev (Globalmente) (Requiere Node)  
+   4.3. Iniciar Live-Server (Requiere Live-Server)  
+   4.4. Iniciar MailDev (Requiere MailDev)
+5. Instalaciones Genéricas (Chocolatey, NodeJs, NPM, Xammp)  
+   5.1. Instalar Chocolatey (Necesario para el funcionamiento de la APP)  
+   5.2. Instalar NPM (Global) - (Requiere NodeJs)  
+   5.3. Instalar NodeJs (Requiere Chocolatey)    
+   5.4. Instalar Xampp (Requiere Chocolatey)    
+   5.5. Desinstalar Xampp (Requiere Chocolatey)  
+6. Librerias Javascript (lodash, underscore, browserify)
+   6.1. Instalar lodash (Globalmente) (Requiere Node)  
+   6.2. Instalar underscore (Globalmente) (Requiere Node)  
+   6.3. Instalar browserify (Por proyecto) (Requiere Node)
 
 II. En caso de realizar la instalación de las librerias de la opción 7, para que funcionen correctamente los
  iconos, habremos de leer la documentación aportada a continuación en caso de estar trabajando con Android:
