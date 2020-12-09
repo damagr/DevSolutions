@@ -79,20 +79,25 @@ Cuando lleguemos al punto 4 de la configuración de Android Studio, no seguir co
 
 + Revisando este script que creó muy amablemente un señor en github:
 
-    https://gist.github.com/jarretmoses/c2e4786fd342b3444f3bc6beff32098d
+    https://gist.github.com/jarretmoses/c2e4786fd342b3444f3bc6beff32098d   
+
 
 + En este hilo de stackoverflow se hablan de incidencias relacionadas con el inicio o la ejecución de react:
 
-    https://stackoverflow.com/questions/37612660/react-native-run-android-is-unrecognized
+    https://stackoverflow.com/questions/37612660/react-native-run-android-is-unrecognized  
+
 
 + En caso de tener una incidencia que indica:
 
-```
-"No apps connected.  Sending "reload" to all React Native apps failed. Make sure your app is running in the simulator or on a phone connected via USB"
-```
+   ```
+   "No apps connected.  Sending "reload" to all React Native apps failed. Make sure your app is running in the simulator
+   or on a phone connected via USB"
+   ```
 
-Podemos probar a utilizar la opción del menú de React-Native de "Resetear Caché de React-Native"
+   Podemos probar a utilizar la opción del menú de React-Native de "Resetear Caché de React-Native". En caso de no
+  solventarse la incidencia, consultar este hilo:  
+https://github.com/facebook/react-native/issues/29396
 
 ## Licencia ©  
 
-Este código no dispone de licencia.
+Este código no dispone de licencia. Cualquiera puede descargarlo y modificarlo a su gusto.
