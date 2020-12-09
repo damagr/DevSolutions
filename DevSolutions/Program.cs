@@ -69,6 +69,11 @@ namespace Program
                             CMD.ExecuteCommand(ReactNative.ElementsAndVectorIcons(pathOrigin));
                             break;
                         case 6:
+                            pathOrigin = AskPath();
+                            ShowDirectory(pathOrigin);
+                            CMD.ExecuteCommand(ReactNative.ResetCacheReactNative(pathOrigin));
+                            break;
+                        case 7:
                             break;
                         default:
                             break;

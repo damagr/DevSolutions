@@ -21,6 +21,16 @@ namespace DevSolutions
             return path.Substring(0, 2) + " " + "&& cd " + path + @"\" + project + " " + run;
         }
 
+        public static string ResetCacheReactNative(string path)
+        {
+            Console.Write("Indicame que proyecto tiene la incidencia: ");
+            string project = Console.ReadLine();
+
+            string reset = "&& npx react-native start --reset-cache";
+
+            return path.Substring(0, 2) + " " + "&& cd " + path + @"\" + project + " " + reset;
+        }
+
         public static string AndroidStudio()
         {
             string aStudio = "choco install androidstudio -y";

@@ -52,7 +52,8 @@ namespace DevSolutions
                "\n3. Instalar Java8 (Requiere NodeJs)" +
                "\n4. Instalar Android Studio (Requiere Chocolatey)" +
                "\n5. Instalar librerias React Native Elements y Vector Icons (Por proyecto) (Requiere Node)" +
-               "\n6. Salir");
+               "\n6. Resetear Caché React Native" +
+               "\n7. Salir");
 
             int reactMenu = int.Parse(Console.ReadLine());
 

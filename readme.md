@@ -43,7 +43,7 @@ I. Entre un sencillo menú que en algunos casos nos llevará a otros submenús, 
    6.2. Instalar underscore (Globalmente) (Requiere Node)  
    6.3. Instalar browserify (Por proyecto) (Requiere Node)  
 
-II. En caso de realizar la instalación de las librerias de la opción 7, para que funcionen correctamente los
+II. En caso de realizar la instalación de las librerias de Vector Icons, para que funcionen correctamente los
  iconos, habremos de leer la documentación aportada a continuación en caso de estar trabajando con Android:
 
     https://github.com/oblador/react-native-vector-icons#android
@@ -84,6 +84,14 @@ Cuando lleguemos al punto 4 de la configuración de Android Studio, no seguir co
 + En este hilo de stackoverflow se hablan de incidencias relacionadas con el inicio o la ejecución de react:
 
     https://stackoverflow.com/questions/37612660/react-native-run-android-is-unrecognized
+
++ En caso de tener una incidencia que indica:
+
+```
+"No apps connected.  Sending "reload" to all React Native apps failed. Make sure your app is running in the simulator or on a phone connected via USB"
+```
+
+Podemos probar a utilizar la opción del menú de React-Native de "Resetear Caché de React-Native"
 
 ## Licencia ©  
 
