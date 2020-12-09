@@ -41,7 +41,7 @@ I. Entre un sencillo menú que en algunos casos nos llevará a otros submenús, 
 6. Librerias Javascript (lodash, underscore, browserify)
    6.1. Instalar lodash (Globalmente) (Requiere Node)  
    6.2. Instalar underscore (Globalmente) (Requiere Node)  
-   6.3. Instalar browserify (Por proyecto) (Requiere Node)
+   6.3. Instalar browserify (Por proyecto) (Requiere Node)  
 
 II. En caso de realizar la instalación de las librerias de la opción 7, para que funcionen correctamente los
  iconos, habremos de leer la documentación aportada a continuación en caso de estar trabajando con Android:
