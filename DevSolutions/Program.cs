@@ -123,7 +123,7 @@ namespace Program
                     switch (Menus.GenericInstall())
                     {
                         case 1:
-                            
+
                             CMD.ExecuteCommand(Generico.Chocolatey());
                             break;
                         case 2:
