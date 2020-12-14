@@ -30,9 +30,9 @@ namespace DevSolutions
                "los proyectos no letenemos que indicar el directorio del proyecto en concreto que queremos iniciar," +
                "tenemos que indicar solamente el directorio que almacena todos los proyectos que tenemos\n");
             Console.WriteLine("Selecciona una opción del menú: " +
-               "\n1. Abrir un proyecto existente (Requiere Chrome)" +
+               "\n1. Abrir un proyecto existente (Requiere NPM)" +
                "\n2. Iniciar un proyecto nuevo (Requiere Node y NPM)" +
-               "\n3. Salir");
+               "\n3. Atrás");
 
             int reactMenu = int.Parse(Console.ReadLine());
 
@@ -53,7 +53,7 @@ namespace DevSolutions
                "\n4. Instalar Android Studio (Requiere Chocolatey)" +
                "\n5. Instalar librerias React Native Elements y Vector Icons (Por proyecto) (Requiere Node)" +
                "\n6. Resetear Caché React Native" +
-               "\n7. Salir");
+               "\n7. Atrás");
 
             int reactMenu = int.Parse(Console.ReadLine());
 
@@ -68,7 +68,7 @@ namespace DevSolutions
                "\n1. Iniciar un proyecto nuevo (Requiere Ionic)" +
                "\n2. Abrir Ionic en localhost (Requiere Ionic)" +
                "\n3. Instalar Ionic (Requiere NodeJs y NPM)" +
-               "\n4. Salir");
+               "\n4. Atrás");
 
             int genericMenu = int.Parse(Console.ReadLine());
 
@@ -86,7 +86,7 @@ namespace DevSolutions
                "\n2. Instalar MailDev (Globalmente) (Requiere Node)" +
                "\n3. Iniciar Live-Server (Requiere Live-Server)" +
                "\n4. Iniciar MailDev (Requiere MailDev)" +
-               "\n5. Salir");
+               "\n5. Atrás");
 
             int webMenu = int.Parse(Console.ReadLine());
 
@@ -102,7 +102,7 @@ namespace DevSolutions
                "\n3. Instalar NodeJs (Requiere Chocolatey) (Necesario para el funcionamiento de la APP)" +
                "\n4. Instalar Xampp (Requiere Chocolatey)" +
                "\n5. Desinstalar Xampp (Requiere Chocolatey)" +
-               "\n6. Salir");
+               "\n6. Atrás");
 
             int genericMenu = int.Parse(Console.ReadLine());
 
@@ -120,7 +120,7 @@ namespace DevSolutions
                "\n1. Instalar lodash (Globalmente) (Requiere Node)" +
                "\n2. Instalar underscore (Globalmente) (Requiere Node)" +
                "\n3. Instalar browserify (Por proyecto) (Requiere Node)" +
-               "\n4. Salir");
+               "\n4. Atrás");
 
             int nodeMenu = int.Parse(Console.ReadLine());
 

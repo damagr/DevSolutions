@@ -12,11 +12,14 @@ namespace DevSolutions
             return path.Substring(0, 2) + " " + "&& cd " + path + " " + "&& " + "npx create-react-app " + project;
         }
 
-        public static string StartReactProject()
+        public static string StartReactProject(string path)
         {
-            string run = "start chrome http://localhost:3000";
 
-            return run;
+            Console.Write("Indicame que proyecto quieres arrancar: ");
+            string project = Console.ReadLine();
+            string run = "&& npm start";
+
+            return path.Substring(0, 2) + " " + "&& cd " + path + @"\" + project + " " + run;
         }
     }
 }
