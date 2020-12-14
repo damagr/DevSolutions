@@ -24,7 +24,7 @@ namespace DevSolutions
 
         public static string StartIonic(string path)
         {
-            return path.Substring(0, 2) + " " + "&& cd " + path + " " + "&& " + "ionic serve && start chrome http://localhost:8100";
+            return path.Substring(0, 2) + " " + "&& cd " + path + " " + "&& " + "ionic serve";
         }
 
         public static string InstallIonicCordova()
