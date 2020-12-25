@@ -39,7 +39,7 @@ I. Entre un sencillo menú que en algunos casos nos llevará a otros submenús, 
    5.3. Instalar NodeJs (Requiere Chocolatey)    
    5.4. Instalar Xampp (Requiere Chocolatey)    
    5.5. Desinstalar Xampp (Requiere Chocolatey)  
-6. Librerias Javascript (lodash, underscore, browserify)
+6. Librerias Javascript (lodash, underscore, browserify)  
    6.1. Instalar lodash (Globalmente) (Requiere Node)  
    6.2. Instalar underscore (Globalmente) (Requiere Node)  
    6.3. Instalar browserify (Por proyecto) (Requiere Node)  
