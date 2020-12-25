@@ -67,8 +67,9 @@ namespace DevSolutions
             Console.WriteLine("Selecciona una opción del menú: " +
                "\n1. Iniciar un proyecto nuevo (Requiere Ionic)" +
                "\n2. Abrir Ionic en localhost (Requiere Ionic)" +
-               "\n3. Instalar Ionic (Requiere NodeJs y NPM)" +
-               "\n4. Atrás");
+               "\n3. Crear nuevo componente (Requiere Ionic)" +
+               "\n4. Instalar Ionic (Requiere NodeJs y NPM)" +
+               "\n5. Atrás");
 
             int genericMenu = int.Parse(Console.ReadLine());
 

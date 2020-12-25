@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DevSolutions
 {
@@ -29,9 +25,19 @@ namespace DevSolutions
 
         public static string InstallIonicCordova()
         {
-            string reactNPM = "npm install -g ionic cordova";
+            return "npm install -g ionic cordova";
+        }
 
-            return reactNPM;
+        public static string CreateNewComponent(string path)
+        {
+            Console.Write("Indicame como llamaremos al componente: ");
+            string name = Console.ReadLine();
+
+            string component = "ionic g page " + name + " " + "--spec=false";
+
+            return path.Substring(0, 2) + " " + "&& cd " + path + " " + "&& " + component;
+
+
         }
     }
 }

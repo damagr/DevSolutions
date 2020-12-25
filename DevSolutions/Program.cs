@@ -98,9 +98,14 @@ namespace Program
                                 CMD.ExecuteCommand(Ionic.StartIonic(pathOrigin));
                                 break;
                             case 3:
-                                CMD.ExecuteCommand(Ionic.InstallIonicCordova());
+                                pathOrigin = AskPath();
+                                ShowDirectory(pathOrigin);
+                                CMD.ExecuteCommand(Ionic.CreateNewComponent(pathOrigin));
                                 break;
                             case 4:
+                                CMD.ExecuteCommand(Ionic.InstallIonicCordova());
+                                break;
+                            case 5:
                                 break;
                             default:
                                 break;
