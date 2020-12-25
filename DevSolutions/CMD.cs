@@ -23,11 +23,11 @@ namespace DevSolutions
                         CreateNoWindow = true,
                     }
                 };
-                updateStatusExecution("***COMANDO RECIBIDO: " + command);
+                
+                updateStatusExecution("***COMANDO: " + command);
                 updateStatusExecution("***RESPUESTA:");
-
                 cmd.Start();
-
+                
                 while (!cmd.StandardOutput.EndOfStream)
                 {
                     string line = cmd.StandardOutput.ReadLine();
@@ -35,7 +35,7 @@ namespace DevSolutions
 
                     if (cmd.StandardOutput.Peek() != -1)
                     {
-                        updateStatusExecution("***FINISHED");
+                        updateStatusExecution("***FINALIZADO");
                         Thread.Sleep(30000);
                     }
 
