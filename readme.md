@@ -28,7 +28,7 @@ I. Entre un sencillo menú que en algunos casos nos llevará a otros submenús, 
    3.2. Abrir Ionic en localhost (Requiere Ionic)  
    3.3. Crear nuevo componente (Requiere Ionic)  
    3.4. Instalar Ionic (Requiere NodeJs y NPM)  
-4. Utilidades Web (Instalar e iniciar Live-Server/MailDev)
+4. Utilidades Web (Instalar e iniciar Live-Server/MailDev)  
    4.1. Instalar Live-Server (Globalmente) (Requiere Google Chrome)  
    4.2. Instalar MailDev (Globalmente) (Requiere Node)  
    4.3. Iniciar Live-Server (Requiere Live-Server)  
