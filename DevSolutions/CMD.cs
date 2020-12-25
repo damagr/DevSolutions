@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Threading;
 
 namespace DevSolutions
 {
@@ -18,23 +19,42 @@ namespace DevSolutions
                         Arguments = "/K " + command,
                         UseShellExecute = false,
                         RedirectStandardOutput = true,
-                        CreateNoWindow = true
+                        RedirectStandardError = true,
+                        CreateNoWindow = true,
                     }
                 };
-                updateStatusExecution("***COMMAND RECEIVED: " + command);
-                updateStatusExecution("***ANSWER:");
+                updateStatusExecution("***COMANDO RECIBIDO: " + command);
+                updateStatusExecution("***RESPUESTA:");
+
                 cmd.Start();
+
                 while (!cmd.StandardOutput.EndOfStream)
                 {
                     string line = cmd.StandardOutput.ReadLine();
                     updateStatusExecution(line);
+
+                    if (cmd.StandardOutput.Peek() != -1)
+                    {
+                        updateStatusExecution("***FINISHED");
+                        Thread.Sleep(30000);
+                    }
+
+                    if (cmd.StandardError.Peek() != -1)
+                    {
+                        updateStatusExecution("***ERROR EJECUTANDO => " + command);
+                        updateStatusExecution("\n" + cmd.StandardError.ReadLine());
+                        updateStatusExecution("\nPulsa Ctrl+C para cerrar la ejecución tras leer el error.");
+                        cmd.WaitForExit();
+                    }
                 }
             }
             catch (Exception e)
             {
-                updateStatusExecution("***Error while executing '" + command + "'");
-                updateStatusExecution("***Exception: '" + e.ToString());
-                updateStatusExecution("***Stack Trace: '" + e.StackTrace.ToString());
+                updateStatusExecution("***ERROR EJECUTANDO => '" + command + "'");
+                updateStatusExecution("***EXCEPCIÓN: '" + e.ToString());
+                updateStatusExecution("***STACK TRACE: '" + e.StackTrace.ToString());
+                updateStatusExecution("\nPulsa Ctrl+C para cerrar la ejecución tras leer la excepción generada.");
+                string project = Console.ReadLine();
             }
         }
         private static void updateStatusExecution(string textR)
