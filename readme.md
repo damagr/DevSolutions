@@ -59,12 +59,12 @@ II. En caso de realizar la instalación de las librerias de Vector Icons, para q
       apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
     ```
 
-## Requisitos 🔑
+## Requisitos React-Native 🔑
 
-Para poder trabajar con React debemos instalar las opciones 3, 4, 5 y 6 **obligatoriamente**. A continuación,
-proporcionamos una documentación para realizar al configuración correcta de Android Studio (opción 6)  
+Para poder trabajar con React-Native debemos instalar Chocolatey y NodeJs **obligatoriamente**. A continuación,
+proporcionamos una documentación para realizar al configuración correcta de Android Studio.  
 
-Para realizar la instalación de Android Studio, accederemos a la documentación de reactnative e iremos
+Para realizar la instalación de Android Studio, accederemos a la documentación de React-Native e iremos
 al apartado en el que explican como instalarlo ya que tenemos que configurar bastantes cosas y esto nos 
 va a requerir tener buena calidad de conexión a internet y espacio en nuestro disco duro. 
 
