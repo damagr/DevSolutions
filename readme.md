@@ -2,9 +2,11 @@
 
 ## Presentación 📕
 
-Esta sencilla aplicación se ha creado para agilizar el proceso de creación, apertura e instalación de proyectos
+Esta aplicación se ha creado para agilizar el proceso de creación, apertura e instalación de proyectos
 y librerias de react, react-native y realizar instalaciones de software requerido para trabajar con las asignaturas
 de 2º de DAM.
+
+La aplicación generalmente requiere de Chocolatey y NodeJs para el correcto funcionamiento.
 
 ## Funcionalidad 📖
 
