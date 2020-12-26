@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.IO;
 using System.Threading;
 
 namespace DevSolutions
@@ -23,36 +24,38 @@ namespace DevSolutions
                         CreateNoWindow = true,
                     }
                 };
-                
-                updateStatusExecution("***COMANDO: " + command);
-                updateStatusExecution("***RESPUESTA:");
+
+                updateStatusExecution("\nCOMANDO ==> " + command);
+                updateStatusExecution("\nRESPUESTA ==>\n");
                 cmd.Start();
-                
-                while (!cmd.StandardOutput.EndOfStream)
+
+                if (cmd.StandardOutput.ReadLine().Length == 0)
                 {
-                    string line = cmd.StandardOutput.ReadLine();
-                    updateStatusExecution(line);
-
-                    if (cmd.StandardOutput.Peek() != -1)
+                    string eLine = cmd.StandardError.ReadLine();
+                    updateStatusExecution("***ERROR EJECUTANDO => " + command + "\n\n" + eLine + "\n\nPulsa Ctrl+C para cerrar la ejecución tras leer el error.");
+                    cmd.WaitForExit();
+                }
+                else
+                {
+                    while (!cmd.StandardOutput.EndOfStream)
                     {
-                        updateStatusExecution("***FINALIZADO");
-                        Thread.Sleep(30000);
-                    }
+                        string line = cmd.StandardOutput.ReadLine();
+                        updateStatusExecution(line);
 
-                    if (cmd.StandardError.Peek() != -1)
-                    {
-                        updateStatusExecution("***ERROR EJECUTANDO => " + command);
-                        updateStatusExecution("\n" + cmd.StandardError.ReadLine());
-                        updateStatusExecution("\nPulsa Ctrl+C para cerrar la ejecución tras leer el error.");
-                        cmd.WaitForExit();
+                        if (cmd.StandardOutput.Peek() != -1)
+                        {
+                            updateStatusExecution("FINALIZADO");
+                            Thread.Sleep(30000);
+                        }
                     }
                 }
+
             }
             catch (Exception e)
             {
-                updateStatusExecution("***ERROR EJECUTANDO => '" + command + "'");
-                updateStatusExecution("***EXCEPCIÓN: '" + e.ToString());
-                updateStatusExecution("***STACK TRACE: '" + e.StackTrace.ToString());
+                updateStatusExecution("ERROR EJECUTANDO ==> '" + command + "'");
+                updateStatusExecution("EXCEPCIÓN: '" + e.ToString());
+                updateStatusExecution("STACK TRACE: '" + e.StackTrace.ToString());
                 updateStatusExecution("\nPulsa Ctrl+C para cerrar la ejecución tras leer la excepción generada.");
                 string project = Console.ReadLine();
             }
