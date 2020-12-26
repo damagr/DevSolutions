@@ -90,17 +90,17 @@ namespace Program
                             case 1:
                                 pathOrigin = AskPath();
                                 ShowDirectory(pathOrigin);
-                                CMD.ExecuteCommand(Ionic.CreateIonicProject(pathOrigin));
+                                CMD.ExecuteCommand(Ionic.StartIonic(pathOrigin));
                                 break;
                             case 2:
                                 pathOrigin = AskPath();
                                 ShowDirectory(pathOrigin);
-                                CMD.ExecuteCommand(Ionic.StartIonic(pathOrigin));
+                                CMD.ExecuteCommand(Ionic.CreateNewComponent(pathOrigin));
                                 break;
                             case 3:
                                 pathOrigin = AskPath();
                                 ShowDirectory(pathOrigin);
-                                CMD.ExecuteCommand(Ionic.CreateNewComponent(pathOrigin));
+                                CMD.ExecuteCommand(Ionic.CreateIonicProject(pathOrigin));
                                 break;
                             case 4:
                                 CMD.ExecuteCommand(Ionic.InstallIonicCordova());

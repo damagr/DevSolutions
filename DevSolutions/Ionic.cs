@@ -20,7 +20,12 @@ namespace DevSolutions
 
         public static string StartIonic(string path)
         {
-            return path.Substring(0, 2) + " " + "&& cd " + path + " " + "&& " + "ionic serve";
+            Console.Write("Indicame que proyecto usaremos: ");
+            string project = Console.ReadLine();
+
+            string run = "&& ionic serve";
+
+            return path.Substring(0, 2) + " " + "&& cd " + path + @"\" + project + " " + run;
         }
 
         public static string InstallIonicCordova()

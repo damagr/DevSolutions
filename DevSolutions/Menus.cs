@@ -30,7 +30,7 @@ namespace DevSolutions
                "los proyectos no letenemos que indicar el directorio del proyecto en concreto que queremos iniciar," +
                "tenemos que indicar solamente el directorio que almacena todos los proyectos que tenemos\n");
             Console.WriteLine("Selecciona una opción del menú: " +
-               "\n1. Abrir un proyecto existente (Requiere NPM)" +
+               "\n1. Arrancar un proyecto existente (Requiere NPM)" +
                "\n2. Iniciar un proyecto nuevo (Requiere Node y NPM)" +
                "\n3. Atrás");
 
@@ -47,7 +47,7 @@ namespace DevSolutions
                "los proyectos no letenemos que indicar el directorio del proyecto en concreto que queremos iniciar," +
                "tenemos que indicar solamente el directorio que almacena todos los proyectos que tenemos\n");
             Console.WriteLine("Selecciona una opción del menú: " +
-               "\n1. Abrir un proyecto existente (Requiere NPM, Node, Java JDK8)" +
+               "\n1. Arrancar un proyecto existente (Requiere NPM, Node, Java JDK8)" +
                "\n2. Iniciar un proyecto nuevo (Requiere NPM, Node, Java JDK8)" +
                "\n3. Instalar Java8 (Requiere NodeJs)" +
                "\n4. Instalar Android Studio (Requiere Chocolatey)" +
@@ -65,9 +65,9 @@ namespace DevSolutions
             Console.Clear();
             Console.WriteLine("\t\t\t\t\t\tMENU IONIC\n");
             Console.WriteLine("Selecciona una opción del menú: " +
-               "\n1. Iniciar un proyecto nuevo (Requiere Ionic)" +
-               "\n2. Abrir Ionic en localhost (Requiere Ionic)" +
-               "\n3. Crear nuevo componente (Requiere Ionic)" +
+               "\n1. Arrancar un proyecto existente (Requiere Ionic)" +
+               "\n2. Crear nuevo componente (Requiere Ionic)" +
+               "\n3. Iniciar un proyecto nuevo (Requiere Ionic)" +
                "\n4. Instalar Ionic (Requiere NodeJs y NPM)" +
                "\n5. Atrás");
 

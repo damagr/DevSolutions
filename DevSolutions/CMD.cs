@@ -60,7 +60,7 @@ namespace DevSolutions
                 string project = Console.ReadLine();
             }
         }
-        private static void updateStatusExecution(string textR)
+        public static void updateStatusExecution(string textR)
         {
             Console.WriteLine(textR);
         }
