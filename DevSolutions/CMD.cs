@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Diagnostics;
-using System.IO;
-using System.Threading;
 
 namespace DevSolutions
 {
@@ -17,7 +15,7 @@ namespace DevSolutions
                     StartInfo = new ProcessStartInfo
                     {
                         FileName = "cmd.exe",
-                        Arguments = "/K " + command,
+                        Arguments = "/C " + command,
                         UseShellExecute = false,
                         RedirectStandardOutput = true,
                         RedirectStandardError = true,
@@ -25,8 +23,8 @@ namespace DevSolutions
                     }
                 };
 
-                updateStatusExecution("\nCOMANDO ==> " + command);
-                updateStatusExecution("\nRESPUESTA ==>\n");
+                updateStatusExecution("\n***COMMAND ==> " + command);
+                updateStatusExecution("\n***ANSWER ==>\n");
 
                 cmd.OutputDataReceived += new DataReceivedEventHandler((s, e) =>
                 {
@@ -41,67 +39,23 @@ namespace DevSolutions
                 cmd.BeginOutputReadLine();
                 cmd.BeginErrorReadLine();
                 cmd.WaitForExit();
-
-                //cmd.Start();
-
-                //while (!cmd.StandardOutput.EndOfStream)
-                //{
-                //    string line = cmd.StandardOutput.ReadLine();
-                //    updateStatusExecution(line);
-
-                //    //if (cmd.StandardOutput.Peek() == -1)
-                //    //{
-                //    //    updateStatusExecution("FINALIZADO");
-                //    //    Thread.Sleep(30000);
-                //    //}
-                //}
-            }
-            catch (Exception e)
-            {
-                updateStatusExecution("ERROR EJECUTANDO ==> '" + command + "'");
-                updateStatusExecution("EXCEPCIÓN: '" + e.ToString());
-                updateStatusExecution("STACK TRACE: '" + e.StackTrace.ToString());
-                updateStatusExecution("\nPulsa Ctrl+C para cerrar la ejecución tras leer la excepción generada.");
-                string project = Console.ReadLine();
-            }
-            updateStatusExecution("FINALIZADO");
-        }
-        public static void updateStatusExecution(string textR)
-        {
-            Console.WriteLine(textR);
-        }
-        public static void ExecuteDir(string command)
-        {
-            try
-            {
-                Process cmd = new Process
+                if (cmd.HasExited)
                 {
-                    StartInfo = new ProcessStartInfo
-                    {
-                        FileName = "cmd.exe",
-                        Arguments = "/C " + command,
-                        UseShellExecute = false,
-                        RedirectStandardOutput = true,
-                        CreateNoWindow = true
-                    }
-                };
-                updateStatusExecution("***COMANDO ==> " + command);
-                updateStatusExecution("***RESPUESTA ==> ");
-                cmd.Start();
-                while (!cmd.StandardOutput.EndOfStream)
-                {
-                    string line = cmd.StandardOutput.ReadLine();
-                    updateStatusExecution(line);
+                    cmd.Close();
                 }
             }
             catch (Exception e)
             {
-                updateStatusExecution("ERROR EJECUTANDO ==> '" + command + "'");
-                updateStatusExecution("EXCEPCIÓN: '" + e.ToString());
-                updateStatusExecution("STACK TRACE: '" + e.StackTrace.ToString());
-                updateStatusExecution("\nPulsa Ctrl+C para cerrar la ejecución tras leer la excepción generada.");
+                updateStatusExecution("***ERROR RUNNING ==> " + command);
+                updateStatusExecution("***EXCEPTION ==> '" + e.ToString());
+                updateStatusExecution("***STACK TRACE ==> '" + e.StackTrace.ToString());
+                updateStatusExecution("\nPRESS CTRL+C WHEN U GET THE EXCEPTION.");
                 string project = Console.ReadLine();
             }
+        }
+        public static void updateStatusExecution(string textR)
+        {
+            Console.WriteLine(textR);
         }
     }
 }

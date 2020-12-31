@@ -6,7 +6,7 @@ namespace DevSolutions
     {
         public static int MainMenu()
         {
-            Console.Clear();
+            //Console.Clear();
             Console.WriteLine("\t\t\t\t\t\tMENU PRINCIPAL\n");
             Console.WriteLine("Selecciona una opción del menú: " +
                  "\n1. React (Abrir proyecto e iniciar proyecto nuevo)" +

@@ -16,7 +16,7 @@ namespace Program
         private static void ShowDirectory(string path)
         {
             Console.Clear();
-            CMD.ExecuteDir("dir " + path);
+            CMD.ExecuteCommand("dir " + path);
         }
 
         /* EJECUCIÓN DEL PROGRAMA */
