@@ -9,14 +9,14 @@ namespace Program
         private static string AskPath()
         {
             string pathOrigin;
-            Console.Write("Introduce la ruta donde almacenas los proyectos: ");
+            Console.Write("Escribe el directorio donde se almacenan los proyectos: ");
             pathOrigin = Console.ReadLine();
             return pathOrigin;
         }
         private static void ShowDirectory(string path)
         {
             Console.Clear();
-            CMD.ExecuteDir("dir " + path);
+            CMD.ExecuteCommand("dir " + path);
         }
 
         /* EJECUCIÓN DEL PROGRAMA */
@@ -63,22 +63,11 @@ namespace Program
                                 CMD.ExecuteCommand(ReactNative.CreateReactNativeProject(pathOrigin));
                                 break;
                             case 3:
-                                CMD.ExecuteCommand(ReactNative.Java8());
-                                break;
-                            case 4:
-                                CMD.ExecuteCommand(ReactNative.AndroidStudio());
-                                break;
-                            case 5:
-                                pathOrigin = AskPath();
-                                ShowDirectory(pathOrigin);
-                                CMD.ExecuteCommand(ReactNative.ElementsAndVectorIcons(pathOrigin));
-                                break;
-                            case 6:
                                 pathOrigin = AskPath();
                                 ShowDirectory(pathOrigin);
                                 CMD.ExecuteCommand(ReactNative.ResetCacheReactNative(pathOrigin));
                                 break;
-                            case 7:
+                            case 4:
                                 break;
                             default:
                                 break;
@@ -115,18 +104,18 @@ namespace Program
                         switch (Menus.WebTools())
                         {
                             case 1:
-                                CMD.ExecuteCommand(Web.InstallLiveServer());
-                                break;
-                            case 2:
-                                CMD.ExecuteCommand(Web.InstallMailDev());
-                                break;
-                            case 3:
                                 pathOrigin = AskPath();
                                 ShowDirectory(pathOrigin);
                                 CMD.ExecuteCommand(Web.StartLiveServer(pathOrigin));
                                 break;
-                            case 4:
+                            case 2:
                                 CMD.ExecuteCommand(Web.StartMailDev());
+                                break;
+                            case 3:
+                                CMD.ExecuteCommand(Web.InstallLiveServer());
+                                break;
+                            case 4:
+                                CMD.ExecuteCommand(Web.InstallMailDev());
                                 break;
                             case 5:
                                 break;
@@ -135,53 +124,8 @@ namespace Program
                         }
                         break;
                     case 5:
-                        switch (Menus.GenericInstall())
-                        {
-                            case 1:
-
-                                CMD.ExecuteCommand(Generico.Chocolatey());
-                                break;
-                            case 2:
-                                CMD.ExecuteCommand(Generico.InstallYarn());
-                                break;
-                            case 3:
-                                CMD.ExecuteCommand(Generico.NodeJs());
-                                break;
-                            case 4:
-                                CMD.ExecuteCommand(Generico.InstallXampp());
-                                break;
-                            case 5:
-                                CMD.ExecuteCommand(Generico.UninstalXampp());
-                                break;
-                            case 6:
-                                break;
-                            default:
-                                break;
-                        }
-                        break;
-                    case 6:
-                        switch (Menus.JavascriptLibraries())
-                        {
-                            case 1:
-                                CMD.ExecuteCommand(Javascript.Lodash());
-                                break;
-                            case 2:
-                                CMD.ExecuteCommand(Javascript.Underscore());
-                                break;
-                            case 3:
-                                pathOrigin = AskPath();
-                                ShowDirectory(pathOrigin);
-                                CMD.ExecuteCommand(Javascript.Browserify(pathOrigin));
-                                break;
-                            case 4:
-                                break;
-                            default:
-                                break;
-                        }
-                        break;
-                    case 7:
                         finish = true;
-                        Console.WriteLine("Xao");
+                        Console.WriteLine("Bye");
                         break;
                     default:
                         break;

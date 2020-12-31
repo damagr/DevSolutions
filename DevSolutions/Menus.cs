@@ -6,16 +6,13 @@ namespace DevSolutions
     {
         public static int MainMenu()
         {
-            Console.Clear();
             Console.WriteLine("\t\t\t\t\t\tMENU PRINCIPAL\n");
             Console.WriteLine("Selecciona una opción del menú: " +
                  "\n1. React (Abrir proyecto e iniciar proyecto nuevo)" +
-                 "\n2. React-Native (Abrir proyecto, iniciar nuevo, instalación librerias y software requerido)" +
-                 "\n3. Ionic (Abrir proyecto e iniciar proyecto nuevo)" +
+                 "\n2. React-Native (Abrir proyecto, iniciar nuevo, liberar caché de React)" +
+                 "\n3. Ionic (Abrir proyecto, iniciar proyecto nuevo, crear componentes)" +
                  "\n4. Utilidades Web (Instalar e iniciar Live-Server/MailDev)" +
-                 "\n5. Instalaciones Genéricas (Chocolatey, NodeJs, Yarn, Xammp)" +
-                 "\n6. Librerias Javascript (lodash, underscore, browserify)" +
-                 "\n7. Salir");
+                 "\n5. Salir");
 
             int mainMenu = int.Parse(Console.ReadLine());
 
@@ -30,8 +27,8 @@ namespace DevSolutions
                "los proyectos no letenemos que indicar el directorio del proyecto en concreto que queremos iniciar," +
                "tenemos que indicar solamente el directorio que almacena todos los proyectos que tenemos\n");
             Console.WriteLine("Selecciona una opción del menú: " +
-               "\n1. Arrancar un proyecto existente (Requiere Yarn)" +
-               "\n2. Iniciar un proyecto nuevo (Requiere Yarn)" +
+               "\n1. Arrancar un proyecto existente" +
+               "\n2. Iniciar un proyecto nuevo" +
                "\n3. Atrás");
 
             int reactMenu = int.Parse(Console.ReadLine());
@@ -47,13 +44,10 @@ namespace DevSolutions
                "los proyectos no letenemos que indicar el directorio del proyecto en concreto que queremos iniciar," +
                "tenemos que indicar solamente el directorio que almacena todos los proyectos que tenemos\n");
             Console.WriteLine("Selecciona una opción del menú: " +
-               "\n1. Arrancar un proyecto existente (Requiere Yarn, Java JDK8)" +
-               "\n2. Iniciar un proyecto nuevo (Requiere Yarn, Java JDK8)" +
-               "\n3. Instalar Java8 (Requiere Chocolatey)" +
-               "\n4. Instalar Android Studio (Requiere Chocolatey)" +
-               "\n5. Instalar librerias React Native Elements y Vector Icons (Por proyecto) (Requiere Yarn)" +
-               "\n6. Resetear Caché React Native" +
-               "\n7. Atrás");
+               "\n1. Arrancar un proyecto existente" +
+               "\n2. Iniciar un proyecto nuevo" +
+               "\n3. Resetear Caché React Native" +
+               "\n4. Atrás");
 
             int reactMenu = int.Parse(Console.ReadLine());
 
@@ -65,10 +59,10 @@ namespace DevSolutions
             Console.Clear();
             Console.WriteLine("\t\t\t\t\t\tMENU IONIC\n");
             Console.WriteLine("Selecciona una opción del menú: " +
-               "\n1. Arrancar un proyecto existente (Requiere Ionic)" +
-               "\n2. Crear nuevo componente (Requiere Ionic)" +
-               "\n3. Iniciar un proyecto nuevo (Requiere Ionic)" +
-               "\n4. Instalar Ionic (Requiere Yarn)" +
+               "\n1. Arrancar un proyecto existente" +
+               "\n2. Crear nuevo componente" +
+               "\n3. Iniciar un proyecto nuevo" +
+               "\n4. Instalar Ionic" +
                "\n5. Atrás");
 
             int genericMenu = int.Parse(Console.ReadLine());
@@ -83,49 +77,15 @@ namespace DevSolutions
                "los proyectos no letenemos que indicar el directorio del proyecto en concreto que queremos iniciar," +
                "tenemos que indicar solamente el directorio que almacena todos los proyectos que tenemos\n");
             Console.WriteLine("Selecciona una opción del menú: " +
-               "\n1. Instalar Live-Server (Globalmente) (Requiere Yarn) (Requiere Google Chrome)" +
-               "\n2. Instalar MailDev (Globalmente) (Requiere Yarn)" +
-               "\n3. Iniciar Live-Server (Requiere Live-Server)" +
-               "\n4. Iniciar MailDev (Requiere MailDev)" +
+               "\n1. Iniciar Live-Server" +
+               "\n2. Iniciar MailDev" +
+               "\n3. Instalar Live-Server (Globalmente)" +
+               "\n4. Instalar MailDev (Globalmente)" +
                "\n5. Atrás");
 
             int webMenu = int.Parse(Console.ReadLine());
 
             return webMenu;
-        }
-        public static int GenericInstall()
-        {
-            Console.Clear();
-            Console.WriteLine("\t\t\t\t\t\tMENU INSTALACIONES GENÉRICAS\n");
-            Console.WriteLine("Selecciona una opción del menú: " +
-               "\n1. Instalar Chocolatey (Necesario para el funcionamiento de la APP)" +
-               "\n2. Instalar Yarn (Global) - (Requiere Chocolatey)" +
-               "\n3. Instalar NodeJs (Requiere Chocolatey) (Necesario para el funcionamiento de la APP)" +
-               "\n4. Instalar Xampp (Requiere Chocolatey)" +
-               "\n5. Desinstalar Xampp (Requiere Chocolatey)" +
-               "\n6. Atrás");
-
-            int genericMenu = int.Parse(Console.ReadLine());
-
-            return genericMenu;
-        }
-
-        public static int JavascriptLibraries()
-        {
-            Console.Clear();
-            Console.WriteLine("\t\t\t\t\t\tMENU JAVASCRIPT\n");
-            Console.WriteLine("Aclaración: Cuando el asistente nos pida que le indiquemos la ruta donde se almacenan " +
-            "los proyectos no letenemos que indicar el directorio del proyecto en concreto que queremos iniciar," +
-            "tenemos que indicar solamente el directorio que almacena todos los proyectos que tenemos\n");
-            Console.WriteLine("Selecciona una opción del menú: " +
-               "\n1. Instalar lodash (Globalmente) (Requiere Yarn)" +
-               "\n2. Instalar underscore (Globalmente) (Requiere Yarn)" +
-               "\n3. Instalar browserify (Globalmente) (Requiere Yarn)" +
-               "\n4. Atrás");
-
-            int nodeMenu = int.Parse(Console.ReadLine());
-
-            return nodeMenu;
         }
     }
 }
