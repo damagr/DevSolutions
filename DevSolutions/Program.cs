@@ -142,7 +142,7 @@ namespace Program
                                 CMD.ExecuteCommand(Generico.Chocolatey());
                                 break;
                             case 2:
-                                CMD.ExecuteCommand(Generico.ReactNPM());
+                                CMD.ExecuteCommand(Generico.ReactYarn());
                                 break;
                             case 3:
                                 CMD.ExecuteCommand(Generico.NodeJs());

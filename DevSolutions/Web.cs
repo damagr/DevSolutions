@@ -4,14 +4,14 @@
     {
         public static string InstallLiveServer()
         {
-            string live = "npm install -g live-server";
+            string live = "yarn global add live-server";
 
             return live;
         }
 
         public static string InstallMailDev()
         {
-            string mail = "npm install -g maildev";
+            string mail = "yarn global add maildev";
 
             return mail;
         }

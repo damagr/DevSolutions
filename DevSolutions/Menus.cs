@@ -13,7 +13,7 @@ namespace DevSolutions
                  "\n2. React-Native (Abrir proyecto, iniciar nuevo, instalación librerias y software requerido)" +
                  "\n3. Ionic (Abrir proyecto e iniciar proyecto nuevo)" +
                  "\n4. Utilidades Web (Instalar e iniciar Live-Server/MailDev)" +
-                 "\n5. Instalaciones Genéricas (Chocolatey, NodeJs, NPM, Xammp)" +
+                 "\n5. Instalaciones Genéricas (Chocolatey, NodeJs, Yarn, Xammp)" +
                  "\n6. Librerias Javascript (lodash, underscore, browserify)" +
                  "\n7. Salir");
 
@@ -30,8 +30,8 @@ namespace DevSolutions
                "los proyectos no letenemos que indicar el directorio del proyecto en concreto que queremos iniciar," +
                "tenemos que indicar solamente el directorio que almacena todos los proyectos que tenemos\n");
             Console.WriteLine("Selecciona una opción del menú: " +
-               "\n1. Arrancar un proyecto existente (Requiere NPM)" +
-               "\n2. Iniciar un proyecto nuevo (Requiere Node y NPM)" +
+               "\n1. Arrancar un proyecto existente (Requiere Yarn)" +
+               "\n2. Iniciar un proyecto nuevo (Requiere Yarn)" +
                "\n3. Atrás");
 
             int reactMenu = int.Parse(Console.ReadLine());
@@ -47,11 +47,11 @@ namespace DevSolutions
                "los proyectos no letenemos que indicar el directorio del proyecto en concreto que queremos iniciar," +
                "tenemos que indicar solamente el directorio que almacena todos los proyectos que tenemos\n");
             Console.WriteLine("Selecciona una opción del menú: " +
-               "\n1. Arrancar un proyecto existente (Requiere NPM, Node, Java JDK8)" +
-               "\n2. Iniciar un proyecto nuevo (Requiere NPM, Node, Java JDK8)" +
-               "\n3. Instalar Java8 (Requiere NodeJs)" +
+               "\n1. Arrancar un proyecto existente (Requiere Yarn, Java JDK8)" +
+               "\n2. Iniciar un proyecto nuevo (Requiere Yarn, Java JDK8)" +
+               "\n3. Instalar Java8 (Requiere Yarn)" +
                "\n4. Instalar Android Studio (Requiere Chocolatey)" +
-               "\n5. Instalar librerias React Native Elements y Vector Icons (Por proyecto) (Requiere Node)" +
+               "\n5. Instalar librerias React Native Elements y Vector Icons (Por proyecto) (Requiere Yarn)" +
                "\n6. Resetear Caché React Native" +
                "\n7. Atrás");
 
@@ -68,7 +68,7 @@ namespace DevSolutions
                "\n1. Arrancar un proyecto existente (Requiere Ionic)" +
                "\n2. Crear nuevo componente (Requiere Ionic)" +
                "\n3. Iniciar un proyecto nuevo (Requiere Ionic)" +
-               "\n4. Instalar Ionic (Requiere NodeJs y NPM)" +
+               "\n4. Instalar Ionic (Requiere Yarn)" +
                "\n5. Atrás");
 
             int genericMenu = int.Parse(Console.ReadLine());
@@ -83,8 +83,8 @@ namespace DevSolutions
                "los proyectos no letenemos que indicar el directorio del proyecto en concreto que queremos iniciar," +
                "tenemos que indicar solamente el directorio que almacena todos los proyectos que tenemos\n");
             Console.WriteLine("Selecciona una opción del menú: " +
-               "\n1. Instalar Live-Server (Globalmente) (Requiere Node) (Requiere Google Chrome)" +
-               "\n2. Instalar MailDev (Globalmente) (Requiere Node)" +
+               "\n1. Instalar Live-Server (Globalmente) (Requiere Yarn) (Requiere Google Chrome)" +
+               "\n2. Instalar MailDev (Globalmente) (Requiere Yarn)" +
                "\n3. Iniciar Live-Server (Requiere Live-Server)" +
                "\n4. Iniciar MailDev (Requiere MailDev)" +
                "\n5. Atrás");
@@ -99,7 +99,7 @@ namespace DevSolutions
             Console.WriteLine("\t\t\t\t\t\tMENU INSTALACIONES GENÉRICAS\n");
             Console.WriteLine("Selecciona una opción del menú: " +
                "\n1. Instalar Chocolatey (Necesario para el funcionamiento de la APP)" +
-               "\n2. Instalar NPM (Global) - (Requiere NodeJs)" +
+               "\n2. Instalar Yarn (Global) - (Requiere Chocolatey)" +
                "\n3. Instalar NodeJs (Requiere Chocolatey) (Necesario para el funcionamiento de la APP)" +
                "\n4. Instalar Xampp (Requiere Chocolatey)" +
                "\n5. Desinstalar Xampp (Requiere Chocolatey)" +
@@ -118,9 +118,9 @@ namespace DevSolutions
             "los proyectos no letenemos que indicar el directorio del proyecto en concreto que queremos iniciar," +
             "tenemos que indicar solamente el directorio que almacena todos los proyectos que tenemos\n");
             Console.WriteLine("Selecciona una opción del menú: " +
-               "\n1. Instalar lodash (Globalmente) (Requiere Node)" +
-               "\n2. Instalar underscore (Globalmente) (Requiere Node)" +
-               "\n3. Instalar browserify (Por proyecto) (Requiere Node)" +
+               "\n1. Instalar lodash (Globalmente) (Requiere Yarn)" +
+               "\n2. Instalar underscore (Globalmente) (Requiere Yarn)" +
+               "\n3. Instalar browserify (Globalmente) (Requiere Yarn)" +
                "\n4. Atrás");
 
             int nodeMenu = int.Parse(Console.ReadLine());

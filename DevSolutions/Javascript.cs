@@ -6,14 +6,14 @@ namespace DevSolutions
     {
         public static string Lodash()
         {
-            string lod = "npm install -g lodash";
+            string lod = "yarn global add lodash";
 
             return lod;
         }
 
         public static string Underscore()
         {
-            string under = "npm install -g underscore";
+            string under = "yarn global add underscore";
 
             return under;
         }
@@ -23,7 +23,7 @@ namespace DevSolutions
             Console.Write("Indicame que proyecto usaremos: ");
             string project = Console.ReadLine();
 
-            string browser = "&& npx react-native run-android";
+            string browser = "&& yarn global add browserify";
 
             return path.Substring(0, 2) + " " + "&& cd " + path + @"\" + project + " " + browser;
         }

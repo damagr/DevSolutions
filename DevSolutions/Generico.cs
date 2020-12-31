@@ -16,11 +16,11 @@
             return node;
         }
 
-        public static string ReactNPM()
+        public static string ReactYarn()
         {
-            string reactNPM = "npm uninstall -g react-native-cli --remove-dependencies && npm install -g npm";
+            string ReactYarn = "yarn global remove react-native-cli";
 
-            return reactNPM;
+            return ReactYarn;
         }
 
         public static string InstallXampp()

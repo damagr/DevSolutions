@@ -30,7 +30,7 @@ namespace DevSolutions
 
         public static string InstallIonicCordova()
         {
-            return "npm install -g ionic cordova";
+            return "yarn global add ionic cordova";
         }
 
         public static string CreateNewComponent(string path)

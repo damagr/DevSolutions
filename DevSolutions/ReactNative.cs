@@ -9,14 +9,14 @@ namespace DevSolutions
             Console.Write("Indicame como llamaremos al proyecto: ");
             string project = Console.ReadLine();
 
-            return path.Substring(0, 2) + " " + "&& cd " + path + " " + "&& " + "npx react-native init " + project;
+            return path.Substring(0, 2) + " " + "&& cd " + path + " " + "&& " + "react-native init " + project + "&& " + "yarn install";
         }
         public static string StartReactNativeProject(string path)
         {
             Console.Write("Indicame que proyecto usaremos: ");
             string project = Console.ReadLine();
 
-            string run = "&& npx react-native run-android";
+            string run = "&& react-native run-android";
 
             return path.Substring(0, 2) + " " + "&& cd " + path + @"\" + project + " " + run;
         }
@@ -26,7 +26,7 @@ namespace DevSolutions
             Console.Write("Indicame que proyecto tiene la incidencia: ");
             string project = Console.ReadLine();
 
-            string reset = "&& npx react-native start --reset-cache";
+            string reset = "&& react-native start --reset-cache";
 
             return path.Substring(0, 2) + " " + "&& cd " + path + @"\" + project + " " + reset;
         }
@@ -50,7 +50,7 @@ namespace DevSolutions
             Console.Write("Indicame que proyecto usaremos: ");
             string project = Console.ReadLine();
 
-            string libraries = "&& npm i react-native-elements && npm i react-native-vector-icons";
+            string libraries = "&& yarn add react-native-elements && yarn add react-native-vector-icons";
 
             return path.Substring(0, 2) + " " + "&& cd " + path + @"\" + project + " " + libraries;
         }
