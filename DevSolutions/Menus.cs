@@ -49,7 +49,7 @@ namespace DevSolutions
             Console.WriteLine("Selecciona una opción del menú: " +
                "\n1. Arrancar un proyecto existente (Requiere Yarn, Java JDK8)" +
                "\n2. Iniciar un proyecto nuevo (Requiere Yarn, Java JDK8)" +
-               "\n3. Instalar Java8 (Requiere Yarn)" +
+               "\n3. Instalar Java8 (Requiere Chocolatey)" +
                "\n4. Instalar Android Studio (Requiere Chocolatey)" +
                "\n5. Instalar librerias React Native Elements y Vector Icons (Por proyecto) (Requiere Yarn)" +
                "\n6. Resetear Caché React Native" +

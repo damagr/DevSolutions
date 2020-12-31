@@ -6,14 +6,14 @@ namespace DevSolutions
     {
         public static string Lodash()
         {
-            string lod = "yarn global add lodash";
+            string lod = "yarn global add lodash && yarn install";
 
             return lod;
         }
 
         public static string Underscore()
         {
-            string under = "yarn global add underscore";
+            string under = "yarn global add underscore && yarn install";
 
             return under;
         }
@@ -23,7 +23,7 @@ namespace DevSolutions
             Console.Write("Indicame que proyecto usaremos: ");
             string project = Console.ReadLine();
 
-            string browser = "&& yarn global add browserify";
+            string browser = "&& yarn global add browserify && yarn install";
 
             return path.Substring(0, 2) + " " + "&& cd " + path + @"\" + project + " " + browser;
         }

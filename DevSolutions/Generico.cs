@@ -4,23 +4,25 @@
     {
         public static string Chocolatey()
         {
-            string choco = "@powershell Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))";
+            string choco = "@powershell Set-ExecutionPolicy Bypass -Scope Process -Force;" +
+                " [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol" +
+                " -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))";
 
             return choco;
         }
 
         public static string NodeJs()
         {
-            string node = "choco install -y nodejs.install";
+            string node = "choco install -y nodejs";
 
             return node;
         }
 
-        public static string ReactYarn()
+        public static string InstallYarn()
         {
-            string ReactYarn = "yarn global remove react-native-cli";
+            string InstallYarn = "choco install -y yarn";
 
-            return ReactYarn;
+            return InstallYarn;
         }
 
         public static string InstallXampp()

@@ -9,7 +9,7 @@ namespace DevSolutions
             Console.Write("Indicame como llamaremos al proyecto: ");
             string project = Console.ReadLine();
 
-            return path.Substring(0, 2) + " " + "&& cd " + path + " " + "&& " + "react-native init " + project + "&& " + "yarn install";
+            return path.Substring(0, 2) + " " + "&& cd " + path + " " + "&& " + "react-native init " + project + " " + "&& " + "yarn install";
         }
         public static string StartReactNativeProject(string path)
         {
