@@ -27,29 +27,34 @@ namespace DevSolutions
 
                 updateStatusExecution("\nCOMANDO ==> " + command);
                 updateStatusExecution("\nRESPUESTA ==>\n");
+
+                cmd.OutputDataReceived += new DataReceivedEventHandler((s, e) =>
+                {
+                    updateStatusExecution(e.Data);
+                });
+                cmd.ErrorDataReceived += new DataReceivedEventHandler((s, e) =>
+                {
+                    updateStatusExecution(e.Data);
+                });
+
                 cmd.Start();
+                cmd.BeginOutputReadLine();
+                cmd.BeginErrorReadLine();
+                cmd.WaitForExit();
 
-                if (cmd.StandardOutput.ReadLine().Length == 0)
-                {
-                    string eLine = cmd.StandardError.ReadLine();
-                    updateStatusExecution("***ERROR EJECUTANDO => " + command + "\n\n" + eLine + "\n\nPulsa Ctrl+C para cerrar la ejecución tras leer el error.");
-                    cmd.WaitForExit();
-                }
-                else
-                {
-                    while (!cmd.StandardOutput.EndOfStream)
-                    {
-                        string line = cmd.StandardOutput.ReadLine();
-                        updateStatusExecution(line);
+                //cmd.Start();
 
-                        if (cmd.StandardOutput.Peek() != -1)
-                        {
-                            updateStatusExecution("FINALIZADO");
-                            Thread.Sleep(30000);
-                        }
-                    }
-                }
+                //while (!cmd.StandardOutput.EndOfStream)
+                //{
+                //    string line = cmd.StandardOutput.ReadLine();
+                //    updateStatusExecution(line);
 
+                //    //if (cmd.StandardOutput.Peek() == -1)
+                //    //{
+                //    //    updateStatusExecution("FINALIZADO");
+                //    //    Thread.Sleep(30000);
+                //    //}
+                //}
             }
             catch (Exception e)
             {
@@ -59,6 +64,7 @@ namespace DevSolutions
                 updateStatusExecution("\nPulsa Ctrl+C para cerrar la ejecución tras leer la excepción generada.");
                 string project = Console.ReadLine();
             }
+            updateStatusExecution("FINALIZADO");
         }
         public static void updateStatusExecution(string textR)
         {
@@ -79,8 +85,8 @@ namespace DevSolutions
                         CreateNoWindow = true
                     }
                 };
-                updateStatusExecution("***COMMAND RECEIVED: " + command);
-                updateStatusExecution("***ANSWER:");
+                updateStatusExecution("***COMANDO ==> " + command);
+                updateStatusExecution("***RESPUESTA ==> ");
                 cmd.Start();
                 while (!cmd.StandardOutput.EndOfStream)
                 {
@@ -90,9 +96,11 @@ namespace DevSolutions
             }
             catch (Exception e)
             {
-                updateStatusExecution("***Error while executing '" + command + "'");
-                updateStatusExecution("***Exception: '" + e.ToString());
-                updateStatusExecution("***Stack Trace: '" + e.StackTrace.ToString());
+                updateStatusExecution("ERROR EJECUTANDO ==> '" + command + "'");
+                updateStatusExecution("EXCEPCIÓN: '" + e.ToString());
+                updateStatusExecution("STACK TRACE: '" + e.StackTrace.ToString());
+                updateStatusExecution("\nPulsa Ctrl+C para cerrar la ejecución tras leer la excepción generada.");
+                string project = Console.ReadLine();
             }
         }
     }
