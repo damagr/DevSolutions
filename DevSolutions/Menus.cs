@@ -4,7 +4,7 @@ namespace DevSolutions
 {
     public static class Menus
     {
-        public static int MainMenu()
+        public static int MainMenu() 
         {
             Console.WriteLine("\t\t\t\t\t\tMENU PRINCIPAL\n");
             Console.WriteLine("Selecciona una opción del menú: " +
