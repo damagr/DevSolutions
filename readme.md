@@ -103,4 +103,4 @@ https://github.com/facebook/react-native/issues/29396
 
 ## Licencia ©  
 
-Este código no dispone de licencia. Cualquiera puede descargarlo y modificarlo a su gusto.
+Leer el License.md
