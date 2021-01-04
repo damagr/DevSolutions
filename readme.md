@@ -54,9 +54,13 @@ I. Entre un sencillo menú que en algunos casos nos llevará a otros submenús, 
 
    Podemos probar a utilizar la opción del menú de React-Native de "Resetear Caché de React-Native". En caso de no
   solventarse la incidencia, consultar este hilo:  
-https://github.com/facebook/react-native/issues/29396
+https://github.com/facebook/react-native/issues/29396  
 
-+ Puede pasar que tengamos incidencias con el emulador de Android Studio, podemos eliminarlo y crear uno nuevo si no funciona la limpieza de cach��.
+
++ Puede pasar que tengamos incidencias con el emulador de Android Studio, podemos eliminarlo y crear uno nuevo si no funciona la limpieza de caché.
+  
+
++ Otra posible solución a algunos problemas relacionados con React-Native sea eliminar la carpeta Node_Modules y volver a instalar las librerias de nuevo.
 
 ## Licencia ©  
 
