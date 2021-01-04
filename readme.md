@@ -101,6 +101,12 @@ Cuando lleguemos al punto 4 de la configuración de Android Studio, no seguir co
   solventarse la incidencia, consultar este hilo:  
   https://github.com/facebook/react-native/issues/29396
 
+
++ Puede pasar que tengamos incidencias con el emulador de Android Studio, podemos eliminarlo y crear uno nuevo si no funciona la limpieza de caché.
+
+
++ Otra posible solución a algunos problemas relacionados con React-Native sea eliminar la carpeta Node_Modules y volver a instalar las librerias de nuevo.
+
 ## Licencia ©
 
 Leer el License.md
