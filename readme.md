@@ -10,15 +10,15 @@ La aplicación generalmente requiere de Yarn para su funcionamiento.
 
 ## Requisitos 🔑  
 
-Instalar Yarn:  
++ Instalar Yarn:  
 
 `choco install yarn -y`  
 
-Uso de yarn:  
++ Uso de yarn:  
 
 https://classic.yarnpkg.com/en/docs/usage  
 
-Aprender a usar los comandos de yarn, esta herramienta no es más que un método para agilizar procesos que realizarmos 
++ Aprender a usar los comandos de yarn, esta herramienta no es más que un método para agilizar procesos que realizarmos 
 repetidas veces.  
 
 https://classic.yarnpkg.com/en/docs/cli/  
