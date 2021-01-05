@@ -6,7 +6,22 @@ Esta aplicación se ha creado para agilizar el proceso de creación, apertura e 
 y librerias de react, react-native y realizar instalaciones de software requerido para trabajar con las asignaturas
 de 2º de DAM.
 
-La aplicación generalmente requiere de Chocolatey y NodeJs para el correcto funcionamiento.
+La aplicación generalmente requiere de Yarn para su funcionamiento.
+
+## Requisitos 🔑  
+
+Instalar Yarn:  
+
+`choco install yarn -y`  
+
+Uso de yarn:  
+
+`https://classic.yarnpkg.com/en/docs/usage`  
+
+Aprender a usar los comandos de yarn, esta herramienta no es más que un método para agilizar procesos que realizarmos 
+repetidas veces.  
+
+`https://classic.yarnpkg.com/en/docs/cli/`  
 
 ## Funcionalidad 📖
 
