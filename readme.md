@@ -12,16 +12,16 @@ La aplicación generalmente requiere de Yarn para su funcionamiento.
 
 + Instalar Yarn:  
 
-`choco install yarn -y`  
+   `choco install yarn -y`  
 
 + Uso de yarn:  
 
-https://classic.yarnpkg.com/en/docs/usage  
+   https://classic.yarnpkg.com/en/docs/usage  
 
 + Aprender a usar los comandos de yarn, esta herramienta no es más que un método para agilizar procesos que realizarmos 
 repetidas veces.  
 
-https://classic.yarnpkg.com/en/docs/cli/  
+   https://classic.yarnpkg.com/en/docs/cli/  
 
 ## Funcionalidad 📖
 
