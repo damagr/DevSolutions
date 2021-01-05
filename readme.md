@@ -8,6 +8,12 @@ de 2º de DAM.
 
 La aplicación generalmente requiere de Chocolatey y NodeJs para el correcto funcionamiento.
 
+Existe otra versión desarrollada para Yarn mucho más intuitiva, eficiente, rápida y compacta, se recomienda hacer uso
+de esa versión ya que esta versión desarrollada para NPM se creó a modo de recopilación de todos los usos de frameworks,
+software y librerias de 2º de DAM.  
+
+https://github.com/damagr/DevSolutions/tree/masterYarn  
+
 ## Funcionalidad 📖
 
 I. Entre un sencillo menú que en algunos casos nos llevará a otros submenús, escogeremos entre las siguientes opciones:
