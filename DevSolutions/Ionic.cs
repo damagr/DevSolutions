@@ -41,8 +41,6 @@ namespace DevSolutions
             string component = "ionic g page " + name + " " + "--spec=false";
 
             return path.Substring(0, 2) + " " + "&& cd " + path + " " + "&& " + component;
-
-
         }
     }
 }

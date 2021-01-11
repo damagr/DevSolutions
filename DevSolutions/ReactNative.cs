@@ -9,7 +9,7 @@ namespace DevSolutions
             Console.Write("Indicame como llamaremos al proyecto: ");
             string project = Console.ReadLine();
 
-            return path.Substring(0, 2) + " " + "&& cd " + path + " " + "&& " + "react-native init " + project + " " + "&& " + "yarn install";
+            return path.Substring(0, 2) + " " + "&& cd " + path + " " + "&& " + "react-native init " + project;
         }
         public static string StartReactNativeProject(string path)
         {
@@ -50,7 +50,7 @@ namespace DevSolutions
             Console.Write("Indicame que proyecto usaremos: ");
             string project = Console.ReadLine();
 
-            string libraries = "&& yarn add react-native-elements && yarn add react-native-vector-icons";
+            string libraries = "&& yarn add react-native-elements && yarn add react-native-vector-icons && yarn install";
 
             return path.Substring(0, 2) + " " + "&& cd " + path + @"\" + project + " " + libraries;
         }

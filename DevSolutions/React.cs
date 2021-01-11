@@ -9,7 +9,7 @@ namespace DevSolutions
             Console.Write("Indicame como llamaremos al proyecto: ");
             string project = Console.ReadLine();
 
-            return path.Substring(0, 2) + " " + "&& cd " + path + " " + "&& " + "create-react-app " + project + " " + "&& " + "yarn install";
+            return path.Substring(0, 2) + " " + "&& cd " + path + " " + "&& " + "create-react-app " + project;
         }
 
         public static string StartReactProject(string path)
@@ -17,7 +17,7 @@ namespace DevSolutions
 
             Console.Write("Indicame que proyecto quieres arrancar: ");
             string project = Console.ReadLine();
-            string run = "&& npm start";
+            string run = "&& yarn start";
 
             return path.Substring(0, 2) + " " + "&& cd " + path + @"\" + project + " " + run;
         }
