@@ -62,10 +62,6 @@ https://github.com/oblador/react-native-vector-icons#android
     Basicamente debemos modificar el archivo ``android/app/build.gradle`` e introducir en la cabecera del documento:
 
     ```
-    project.ext.vectoricons = [
-      iconFontNames: [ 'MaterialIcons.ttf', 'EvilIcons.ttf' ] // Nombre de las fuentes que quieras copiar
-    ]
-  
       apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
     ```
 
