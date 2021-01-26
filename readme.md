@@ -57,7 +57,7 @@ I. Entre un sencillo menú que en algunos casos nos llevará a otros submenús, 
 II. En caso de realizar la instalación de las librerias de Vector Icons, para que funcionen correctamente los
 iconos, habremos de leer la documentación aportada a continuación en caso de estar trabajando con Android:
 
-    https://github.com/oblador/react-native-vector-icons#android
+https://github.com/oblador/react-native-vector-icons#android
 
     Basicamente debemos modificar el archivo ``android/app/build.gradle`` e introducir en la cabecera del documento:
 
