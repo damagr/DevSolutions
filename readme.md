@@ -59,11 +59,9 @@ iconos, habremos de leer la documentación aportada a continuación en caso de e
 
 https://github.com/oblador/react-native-vector-icons#android
 
-    Basicamente debemos modificar el archivo ``android/app/build.gradle`` e introducir en la cabecera del documento:
+Basicamente debemos modificar el archivo `android/app/build.gradle` e introducir en la cabecera del documento:
 
-    ```
-      apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
-    ```
+`apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"`
 
 ## Requisitos React-Native 🔑
 
